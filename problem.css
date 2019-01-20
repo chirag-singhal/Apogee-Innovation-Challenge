@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wraper{
+    height:100vh;
+    width: 100vw;
+    background: url("svg/ProblemStatements1.svg");
+    background-size: cover;
+    display: flex;
+    z-index: 5;
+}
+.half1{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.half2{
+    width: 50vw;
+    height: 100vh;
+}
+.nav{
+    height: 20vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+}
+.heading1 h1{
+    font-family: Bahnschrift;
+    color: #2dc9af;
+    margin: 2vh;
+    font-size: 13vh;
+    font-weight: 500;
+    margin-right: 3px;
+}
+.logo{
+    width: 266px;
+    height: 49px;
+    background: url("svg/apogeelogo.svg");
+    background-size: cover;
+    margin: 5vh;
+}
+.content{
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content p{
+    color: #2e394c;
+    font-size: 28px;
+    padding: 8vw;
+    font-family: SegoeUI, Segoe UI;
+}
+.heading2 h1{
+    font-family: Bahnschrift;
+    color: white;
+    margin: 2vh;
+    font-size: 13vh;
+    font-weight: 500;
+    margin-left: 3px;
+}
+.logohead{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    height: 55vh;
+    width: 60vh;
+    background: url("svg/eric_logo.svg");
+    background-size: cover;
+}
+.download{
+    position: absolute;
+    height: 90vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+}
+.download h2{
+    background: #63ddc9;
+    padding: 2vh 2vw;
+    border-radius: 50px / 45px;
+}
+.download h2 a{
+    text-decoration: none;
+    color: white;
+}
+.leftarrow{
+    height: 52px;
+    width: 30px;
+    background: url("svg/path.svg");
+    background-size: cover;
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-50%);
+    left: 1.5vw;
+    z-index: 50;
+}
+.rightarrow{
+    height: 52px;
+    width: 31px;
+    background: url("svg/path-1.svg");
+    background-size: cover;
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-50%);
+    left: 97.2vw;
+    z-index: 50;
+}

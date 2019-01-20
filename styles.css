@@ -19,7 +19,11 @@ body{
     z-index: 20;
 }
 .logo{
-    width: 20vw;
+    width: 200px;
+    height: 37px;
+    background: url("svg/apogeelogo.svg");
+    background-size: cover;
+    margin: 5vh;
 }
 .links{
     margin: 5vh 2vw;
