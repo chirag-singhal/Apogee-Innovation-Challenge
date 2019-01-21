@@ -14,18 +14,73 @@
         <div class="nav">
             <div class="logo"></div>
             <div class="links">
-                <a href="#" class="nav-links">HOME</a>
-                <a href="#" class="nav-links">RULES</a>
-                <a href="#" class="nav-links">CONTACT US</a>
-                <a href="#" class="nav-links">REGISTER</a>
+                <a href="#" class="nav-links" onclick="navigate(0)">HOME</a>
+                <a href="#" class="nav-links" onclick="navigate(1)">RULES</a>
+                <a href="#" class="nav-links" onclick="navigate(2)">CONTACT US</a>
+                <a href="#" class="nav-links" onclick="openReg()">REGISTER</a>
             </div>
         </div>
-        <div class="heading">
-            <h1>APOGEE INNOVATION CHALLENGE</h1>
-            <div class="circle"></div>
+        <div class="container">
+            <div class="home">
+                <h1>APOGEE INNOVATION CHALLENGE</h1>
+                <div class="circle"></div>
+            </div>
+            <div class="rules">
+                <h3>RULES</h3>
+                <p>
+                    Participants are to form teams of 2-4 students. The participants must upload their solutions on the portal given in the APOGEE websiteby 17th Feb'18.'​
+                    The participants must present their solutions (in the form of PPT) to the company.
+                    Internships and possible job offers await the winners (one or more from each category) along with cash prizes and goodies.
+                </p>
+            </div>
+            <div class="contacts">
+                <h3>CONTACT US</h3>
+                <p>Garv Sharma<br>+91-8003113704</p>
+            </div>
         </div>
         <div class="problem">
             <h2><a href="#">VIEW PROBLEM STATEMENTS</a></h2>
+        </div>
+    </div>
+    <div class="regContainer">
+        <div class="register">
+            <span class="closeReg" onclick="closeReg()">x</span>
+            <h5>REGISTER</h5>
+            <p>
+                (NOTE:- You have to register on the <a href="#">APOGEE HOME PAGE</a> before submitting your solutions here. Also only one team member needs to register for the whole team)
+                <br><br>
+                BITSians can register through this <a href="#">GOOGLE FORM</a>
+                <br><br>
+                <form>
+                <h4>TEAM LEADER </h4>
+                <br>
+                Email <input type="text">
+                <br><br>
+                <div class="members">
+                    <h4>MEMBERS (max 3)</h4>
+                </div>
+                <br>
+                <input type="button" class="regButton" value="Add Member" onclick="addMember()">
+                <br><br><br>
+                Problem &emsp;
+                <select>
+                    <option>Select</option>
+                    <option>GE Healthcare</option>
+                    <option>Ericsson</option>
+                    <option>Da Vinci Creations</option>
+                    <option>GNOMIKX/option>
+                    <option>Rolls-Royce</option>
+                    <option>Harva</option>
+                    <option>IPCA</option>
+                    <option>Hacker Earth</option>
+                </select>
+                <br><br>
+                Upload Solution &emsp;
+                <input type="file">
+                <br><br>
+                <input type="button" class="regButton" value="Submit">
+                </form>
+            </p>
         </div>
     </div>
 </body>

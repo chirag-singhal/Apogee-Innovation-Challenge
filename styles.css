@@ -42,19 +42,17 @@ body{
     border-radius: 20px / 17px;
     margin-right: 10vw;
 }
-.heading{
-    position: absolute;
+.home {
     width: 50vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+    height: 80vh;
     color: #2dc9af;
 }
-.heading h1{
+.home h1{
     font-size: 12vh;
     font-family: Bahnschrift;
     font-weight: 500;
     margin-left: 4vw;
+    margin-top: 18.5vh;
 }
 .problem{
     position: absolute;
@@ -74,4 +72,103 @@ body{
 .problem h2 a{
     text-decoration: none;
     color: white;
+}
+h3 {
+    font-size: 8vh;
+    text-align: center;
+    font-family: Bahnschrift;
+    color: #2dc9af;
+    font-weight: 500;
+    margin: 7vh;
+}
+.container {
+    width: 100vw;
+}
+.rules {
+    display: none;
+    width: 80vw;
+    margin: 0 10vw;
+}
+.rules > p {
+    font-size: 4vh;
+    font-family: Bahnschrift;
+    color: #565656;
+}
+.contacts {
+    display: none;
+    width: 80vw;
+    margin: 0 10vw;
+}
+.contacts > p {
+    font-size: 5vh;
+    font-family: Bahnschrift;
+    color: #565656;
+    text-align: center;
+    margin-top: 10vh;
+}
+.regContainer {
+    display: none;;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    opacity: 0;
+    transition: 1s;
+}
+.register {
+    width: 40vw;
+    height: 79.5vh;
+    margin: 8vh 25vw;
+    padding: 2vh 5vw;
+    background-color: #fff;
+    overflow-y: scroll;
+    transform: translateY(-50%);
+    transition: 1s;
+}
+.register > p {
+    font-size: 2vh;
+    font-family: Bahnschrift;
+    color: #565656;
+    text-align: center;
+}
+form {
+    font-size: 1.5vh;
+    font-family: Bahnschrift;
+    color: #565656;
+    text-align: center;
+}
+h4 {
+    font-size: 2vh;
+    font-family: Bahnschrift;
+    color: #565656;
+    font-weight: 500;
+    margin: 0;
+}
+.regButton {
+    font-size: 2vh;
+    padding: 7px 20px;
+    background: #63ddc9;
+    border-radius: 50px / 45px;
+    cursor: pointer;
+}
+h5 {
+    font-size: 3.5vh;
+    text-align: center;
+    font-family: Bahnschrift;
+    color: #2dc9af;
+    font-weight: 500;
+    margin: 3vh;
+}
+.closeReg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: grey;
+    font-size: 1.5rem;
+}
+.closeReg:hover {
+    color: #565656;
 }
