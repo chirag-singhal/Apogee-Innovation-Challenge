@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .wraper{
     height: 100vh;
@@ -171,4 +172,26 @@ h5 {
 }
 .closeReg:hover {
     color: #565656;
+}
+.prob {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: none;
+}
+
+.homeButton {
+    position: absolute;
+    bottom: 8vh;
+    right: 5vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+    height: 25px;
+    color: #fff;
+    padding: 10px 10px;
+    cursor: pointer;
 }

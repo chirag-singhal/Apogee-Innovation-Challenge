@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.wraper{
+.probWraper{
     height:100vh;
     width: 100vw;
     background: url("svg/ProblemStatements1.svg");
@@ -27,13 +27,20 @@ body{
     justify-content: space-between;
     z-index: 20;
 }
+.heading1 {
+    white-space: nowrap;
+}
+.heading2 {
+    white-space: nowrap;
+}
 .heading1 h1{
     font-family: Bahnschrift;
     color: #2dc9af;
     margin: 2vh;
-    font-size: 13vh;
+    font-size: 7rem;
     font-weight: 500;
     margin-right: 3px;
+    margin-left: 0;
 }
 .logo{
     width: 266px;
@@ -53,16 +60,20 @@ body{
 .content p{
     color: #2e394c;
     font-size: 28px;
-    padding: 8vw;
+    padding: 0 8vw;
+    margin: 0;
     font-family: SegoeUI, Segoe UI;
+    max-height: 55vh;
+    overflow: scroll;
 }
 .heading2 h1{
     font-family: Bahnschrift;
     color: white;
     margin: 2vh;
-    font-size: 13vh;
+    font-size: 7rem;
     font-weight: 500;
     margin-left: 3px;
+    margin-right: 0;
 }
 .logohead{
     position: absolute;
@@ -74,14 +85,13 @@ body{
     justify-content: center;
 }
 .main{
-    height: 55vh;
     width: 60vh;
-    background: url("svg/eric_logo.svg");
-    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 .download{
     position: absolute;
-    height: 90vh;
+    bottom: 10vh;
     width: 50vw;
     display: flex;
     justify-content: center;
@@ -108,6 +118,7 @@ body{
     transform: translateY(-50%);
     left: 1.5vw;
     z-index: 50;
+    cursor: pointer;
 }
 .rightarrow{
     height: 52px;
@@ -119,4 +130,5 @@ body{
     transform: translateY(-50%);
     left: 97.2vw;
     z-index: 50;
+    cursor: pointer;
 }
