@@ -234,6 +234,9 @@ h5 {
         width: 80vw;
         font-size: 15vw;
     }
+    .homeButton{
+        display: none;
+    }
     .problem h2{
         background: #63ddc9;
         width: 70vw;

@@ -137,10 +137,17 @@ var problem =
 }
 
 function viewProblem(){
+	var home = document.getElementsByClassName("home")[0];
+	var rules = document.getElementsByClassName("rules")[0];
+	var contacts = document.getElementsByClassName("contacts")[0];
+	home.style.display = "none";
+	rules.style.display = "none";
+	contacts.style.display = "none";
 	var probElem = document.getElementsByClassName("prob")[0];
 	probElem.style.display = "block";
 }
 function goHome(){
 	var probElem = document.getElementsByClassName("prob")[0];
 	probElem.style.display = "none";	
+	home.style.display = "block";
 }

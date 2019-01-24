@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 ::-webkit-scrollbar {
     display:none;
@@ -59,6 +60,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
 }
 .content p{
     color: #2e394c;
@@ -148,20 +150,24 @@ body{
         width: 86vw;
         background: #38b49f;
         margin-left: 7vw;
-        margin-top: 5vh;
+        margin-top: 7vh;
+        overflow: scroll;
     }
     .content p{
         font-size: 5vw;
         color: #a6e6e1;
+        margin-top: 9vh;
+        height: 45vh;
         padding-left: 10vw;
         padding-right: 5vw;
+        overflow: scroll;
     }
     .heading1{
-        width: 45vw;
+        width: 50vw;
         display: flex;
         justify-content: flex-end;
         position: absolute;
-        top: 20vh;
+        top: 30vh;
         left: 0;
     }
     .heading2{
@@ -169,15 +175,15 @@ body{
         position: absolute;
         display: flex;
         justify-content: flex-start;
-        top: 20vh;
-        left: 43vw;
+        top: 30vh;
+        left: 48.2vw;
     }
     .heading1 h1{
-        font-size: 6vw;
+        font-size: 8vw;
         color: white;
     }
     .heading2 h1{
-        font-size: 6vw;
+        font-size: 8vw;
         color: white;
     }
     .half1, .half2{
@@ -186,14 +192,20 @@ body{
     }
     .logohead{
         position: absolute;
-        top: 14vh;
+        top: 12vh;
         left: 35vw;
         height: 100vh;
         width: 4vw;
         display: block;
     }
     .rightarrow{
-        left: 90vw;
+        left: 94vw;
+        width: 18px;
+        height: 30px;
+    }
+    .leftarrow{
+        width: 18px;
+        height: 30px;
     }
     .logo{
         height: 29px;
@@ -212,6 +224,7 @@ body{
     }
     .main {
         width: 30vw;
+        height: 30vw;
         margin: 0;
         padding: 0;
     }
