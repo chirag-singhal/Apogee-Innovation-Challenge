@@ -178,4 +178,4 @@ function openMenu(){
 window.onload = function() {
 	var iframe = document.getElementById('ifr');
 	iframe.setAttribute('src', 'problem.html');
-  });
+  }
