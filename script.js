@@ -175,3 +175,7 @@ function openMenu(){
 	document.getElementsByClassName("hamburger")[0].style.display = "none";
 	hamCheck = 0;
 }
+window.onload = function() {
+	var iframe = document.getElementById('ifr');
+	iframe.setAttribute('src', 'problem.html');
+  });

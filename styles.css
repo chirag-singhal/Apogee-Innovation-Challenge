@@ -54,6 +54,12 @@ body{
     position: absolute;
     top: -35vh;
     right: -2vw;
+    transform-origin: 100% 65%;
+    animation: spin 120s infinite linear;
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }
 .home {
     width: 100vw;
