@@ -67,9 +67,8 @@ body{
     font-size: 3vh;
     padding: 0 8vw;
     margin: 0;
-    font-family: SegoeUI, Segoe UI;
+    font-family: Bahnschrift;
     max-height: 55vh;
-    overflow: scroll;
 }
 .heading2 h1{
     font-family: Bahnschrift;
