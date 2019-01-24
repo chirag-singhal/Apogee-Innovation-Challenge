@@ -10,7 +10,8 @@ body{
     height:100vh;
     width: 100vw;
     background: url("svg/ProblemStatements1.svg");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: flex;
     z-index: 5;
 }
@@ -60,15 +61,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: scroll;
 }
 .content p{
     color: #2e394c;
-    font-size: 3vh;
+    font-size: 2rem;
     padding: 0 8vw;
     margin: 0;
     font-family: Bahnschrift;
-    max-height: 55vh;
+    max-height: 50vh;
+    overflow: scroll;
 }
 .heading2 h1{
     font-family: Bahnschrift;
@@ -89,7 +90,7 @@ body{
     justify-content: center;
 }
 .main{
-    width: 60vh;
+    width: 600px;
     margin: 0;
     padding: 0;
 }
@@ -135,13 +136,99 @@ body{
     position: absolute;
     top: 50vh;
     transform: translateY(-50%);
-    left: 97.2vw;
+    right: 1.5vw;
     z-index: 50;
     cursor: pointer;
 }
+
+
+@media all and (max-width:1600px){
+    .heading1 h1, .heading2 h1 {
+        font-size: 6rem;
+    }
+}
+
+
+@media all and (max-width:1450px){
+    .heading1 h1, .heading2 h1 {
+        font-size: 5rem;
+    }
+
+    .logo{
+        width: 220px;
+        height: 40.5px;
+    }
+}
+
+
+@media all and (max-width:1250px){
+    .heading1 h1, .heading2 h1 {
+        font-size: 4rem;
+        margin-top: 5vh;
+    }
+    .main {
+        width: 500px;
+    }
+}
+
+
+@media all and (max-width:1150px){
+    .heading1 h1, .heading2 h1 {
+        font-size: 3.5rem;
+        margin-top: 5vh;
+    }
+    .main {
+        width: 400px;
+    }
+    .logo{
+        width: 180px;
+        height: 33px;
+    }
+    .content p{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media all and (max-width:1150px){
+    .heading1 h1, .heading2 h1 {
+        font-size: 3rem;
+        margin-top: 4vh;
+    }
+    .main {
+        width: 350px;
+    }
+    .logo{
+        width: 140px;
+        height: 25.8px;
+    }
+    .content p{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media all and (max-width:850px){
+    .heading1 h1, .heading2 h1 {
+        font-size: 2.5rem;
+        margin-top: 4vh;
+    }
+    .main {
+        width: 270px;
+    }
+    .logo{
+        width: 100px;
+        height: 18.5px;
+    }
+    .content p{
+        font-size: 1rem;
+    }
+}
+
+
 @media all and (max-width:600px){
-    .half1{
-        width: 100vw;
+    .probWraper{
+        background-size: 200% 100%;
     }
     .content{
         position: relative;
@@ -188,6 +275,9 @@ body{
     .half1, .half2{
         position: absolute;
         width: 100vw;
+    }
+    .half2 {
+        height: 30vh;
     }
     .logohead{
         position: absolute;

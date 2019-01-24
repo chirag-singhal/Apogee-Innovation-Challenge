@@ -145,8 +145,20 @@ function viewProblem(){
 	contacts.style.display = "none";
 	var probElem = document.getElementsByClassName("prob")[0];
 	probElem.style.display = "block";
+	window.addEventListener("keyup", function(e){
+		if(e.key == "ArrowRight" | e.key == "ArrowUp")
+			nextProblem();
+		if(e.key == "ArrowDown" | e.key == "ArrowLeft")
+			prevProblem();
+	});
 }
 function goHome(){
+	var home = document.getElementsByClassName("home")[0];
+	var rules = document.getElementsByClassName("rules")[0];
+	var contacts = document.getElementsByClassName("contacts")[0];
+	home.style.display = "block";
+	rules.style.display = "block";
+	contacts.style.display = "block";
 	var probElem = document.getElementsByClassName("prob")[0];
 	probElem.style.display = "none";	
 	home.style.display = "block";
