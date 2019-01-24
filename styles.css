@@ -43,25 +43,36 @@ body{
     border-radius: 20px / 17px;
     margin-right: 10vw;
 }
+.circle{
+    height: 135vh;
+    width: 80vw;
+    background: url(svg/circle.svg);
+    background-size: cover;
+    position: absolute;
+    top: -35vh;
+    right: -2vw;
+}
 .home {
-    width: 50vw;
+    width: 100vw;
     height: 80vh;
     color: #2dc9af;
 }
 .home h1{
     font-size: 12vh;
+    width: 50vw;
     font-family: Bahnschrift;
     font-weight: 500;
     margin-left: 4vw;
-    margin-top: 18.5vh;
+    margin-top: 29.5vh;
 }
 .problem{
     position: absolute;
     width: 100vw;
     height: 90vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3vw;
 }
@@ -70,7 +81,14 @@ body{
     padding: 2vh 2vw;
     border-radius: 50px / 45px;
 }
+.problem h3{
+    display: none;
+}
 .problem h2 a{
+    text-decoration: none;
+    color: white;
+}
+.problem h3 a{
     text-decoration: none;
     color: white;
 }
@@ -182,7 +200,9 @@ h5 {
     z-index: 20;
     display: none;
 }
-
+.hamburger{
+    display: none;
+}
 .homeButton {
     position: absolute;
     bottom: 8vh;
@@ -194,4 +214,61 @@ h5 {
     color: #fff;
     padding: 10px 10px;
     cursor: pointer;
+}
+@media all and (max-width: 600px){
+    .home{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    .home h1{
+        margin: 0;
+        width: 80vw;
+        font-size: 15vw;
+    }
+    .problem h2{
+        background: #63ddc9;
+        width: 70vw;
+        padding: 2vh 2vw;
+        font-size: 4vw;
+        text-align: center;
+        border-radius: 50px / 45px;
+    }
+    .problem h3{
+        display: block;
+        width: 40vw;
+        margin-bottom: 0;
+        background: #63ddc9;
+        font-size: 4vw;
+        padding: 2vh 2vw;
+        border-radius: 50px / 45px;
+    }
+    .problem{
+        width: 100vw;
+        height: 95vh;
+    }
+    .logo{
+        height: 29px;
+        width: 160px;
+    }
+    .hamburger{
+        display: block;
+        height: 50px;
+        width: 20vw;
+        margin: 3.5vh 3vw;
+        background: url("svg/menu.svg");
+    }
+    .register{
+        width: 90vw;
+        margin: 8vh 1vw;
+        padding: 3vh 4vw;
+    }
 }

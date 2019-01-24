@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="667" viewBox="0 0 375 667">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-iPhone_6_7_8_1);
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-3, .cls-9 {
+        fill: none;
+      }
+
+      .cls-4, .cls-7 {
+        fill: #39b49f;
+      }
+
+      .cls-5 {
+        fill: #343333;
+      }
+
+      .cls-6 {
+        fill: #2dc9af;
+      }
+
+      .cls-7 {
+        font-size: 45px;
+        font-family: Bahnschrift;
+        letter-spacing: 0.025em;
+      }
+
+      .cls-8 {
+        opacity: 0.3;
+      }
+
+      .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-9 {
+        stroke: #2dc9af;
+      }
+
+      .cls-10, .cls-12, .cls-13, .cls-14, .cls-15, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-9 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-11 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-12 {
+        opacity: 0.6;
+      }
+
+      .cls-13 {
+        opacity: 0.4;
+      }
+
+      .cls-14 {
+        opacity: 0.41;
+      }
+
+      .cls-15 {
+        opacity: 0.39;
+      }
+
+      .cls-16 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-17, .cls-19 {
+        fill: #fff;
+      }
+
+      .cls-17 {
+        font-size: 15px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-18 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-20 {
+        filter: url(#iurg3z70-2);
+      }
+
+      .cls-21 {
+        filter: url(#iurg3z70);
+      }
+
+      .cls-22 {
+        filter: url(#APOGEE_INNOVATION_CHALLENGE);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="1.235" cy="0.66" r="1.198" gradientTransform="matrix(-1.736, -0.218, 0.69, -1.736, 2.923, 2.074)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#c3eaf0"/>
+    </radialGradient>
+    <filter id="APOGEE_INNOVATION_CHALLENGE" x="32" y="173.5" width="289" height="175" filterUnits="userSpaceOnUse">
+      <feOffset dx="-3" dy="1.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="1.123" y1="-2.392" x2="-0.028" y2="1.932" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#55bf91"/>
+      <stop offset="1" stop-color="#2e8486"/>
+    </linearGradient>
+    <filter id="iurg3z70" x="12" y="520.6" width="350.865" height="131.4" filterUnits="userSpaceOnUse">
+      <feOffset dy="16" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-2"/>
+      <feFlood flood-color="#22ffe1" flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="1.123" y1="-2.392" x2="-0.058" y2="1.633" xlink:href="#linear-gradient"/>
+    <filter id="iurg3z70-2" x="66" y="448" width="241.865" height="131.4" filterUnits="userSpaceOnUse">
+      <feOffset dy="16" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-3"/>
+      <feFlood flood-color="#22ffe1" flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-iPhone_6_7_8_1">
+      <rect width="375" height="667"/>
+    </clipPath>
+  </defs>
+<g id="Menu" transform="translate(-18 -19)">
+    <rect id="Rectangle_175" data-name="Rectangle 175" class="cls-3" width="22.173" height="22.173" transform="translate(35 37)"/>
+    <path id="Union_4" data-name="Union 4" class="cls-4" d="M0,23.813v-3.4H13.586v3.4ZM0,13.607v-3.4H27.173v3.4ZM0,3.4V0H27.173V3.4Z" transform="translate(35 38.18)"/>
+</g>
+</svg>
