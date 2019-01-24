@@ -226,7 +226,7 @@ body{
 }
 
 
-@media all and (max-width:600px){
+@media all and (max-width:700px){
     .probWraper{
         background-size: 200% 100%;
     }
@@ -253,7 +253,7 @@ body{
         display: flex;
         justify-content: flex-end;
         position: absolute;
-        top: 30vh;
+        top: 28vh;
         left: 0;
     }
     .heading2{
@@ -261,7 +261,7 @@ body{
         position: absolute;
         display: flex;
         justify-content: flex-start;
-        top: 30vh;
+        top: 28vh;
         left: 48.2vw;
     }
     .heading1 h1{
@@ -283,7 +283,6 @@ body{
         position: absolute;
         top: 12vh;
         left: 35vw;
-        height: 100vh;
         width: 4vw;
         display: block;
     }
@@ -303,6 +302,7 @@ body{
     .nav{
         width: 100vw;
         height: 10vh;
+        justify-content: flex-end;
     }
     .hamburger{
         display: block;
@@ -310,6 +310,7 @@ body{
         width: 20vw;
         margin: 3.5vh 3vw;
         background: url("svg/menu.svg");
+        cursor: pointer;
     }
     .main {
         width: 30vw;

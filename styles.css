@@ -6,7 +6,7 @@ body{
 .wraper{
     height: 100vh;
     width: 100vw;
-    background: url("svg/LandingPage1.svg");
+    background: url("svg/LandingPage.svg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -285,10 +285,10 @@ h5 {
         justify-content: center;
         align-items: center;
     }
-    .circle{
-        display: none;
+    .nav {
+        justify-content: flex-end;
     }
-    .links{
+    .circle{
         display: none;
     }
     .home h1{
@@ -332,10 +332,40 @@ h5 {
         width: 20vw;
         margin: 3.5vh 3vw;
         background: url("svg/menu.svg");
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 30;
     }
     .register{
         width: 90vw;
         margin: 8vh 1vw;
         padding: 3vh 4vw;
+    }
+    .links{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 35;
+        margin: 0;
+        font-size: 2.5rem;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #63ddc9;
+        display: none;
+        transform: translateX(-100vw);
+        transition: 0.5s ease-in;
+    }
+    .nav-links{
+        text-decoration: none;
+        height: 25px;
+        color: #fff;
+        padding: 3vh;
+    }
+    .links :nth-child(4){
+        display: none;
     }
 }

@@ -1,5 +1,14 @@
 var n, c = 0;
 function navigate(n){
+	if(hamCheck == 0)
+	{
+		var menu = document.getElementsByClassName("links")[0];
+		menu.style.transform = "translateX(-100vw)";
+		document.getElementsByClassName("hamburger")[0].style.display = "block";
+	}
+	setTimeout(function(){
+		menu.style.display = "none";
+	}, 10);
 	if(n!=c)
 	{
 		var home = document.getElementsByClassName("home")[0];
@@ -11,7 +20,7 @@ function navigate(n){
 		switch(n){
 			case 0:
 			{
-				home.style.display = "block";
+				home.style.display = "flex";
 				c = 0;
 				break;
 			}
@@ -137,12 +146,8 @@ var problem =
 }
 
 function viewProblem(){
-	var home = document.getElementsByClassName("home")[0];
-	var rules = document.getElementsByClassName("rules")[0];
-	var contacts = document.getElementsByClassName("contacts")[0];
-	home.style.display = "none";
-	rules.style.display = "none";
-	contacts.style.display = "none";
+	var wraper = document.getElementsByClassName("wraper")[0];
+	wraper.style.display = "none";
 	var probElem = document.getElementsByClassName("prob")[0];
 	probElem.style.display = "block";
 	window.addEventListener("keyup", function(e){
@@ -153,13 +158,20 @@ function viewProblem(){
 	});
 }
 function goHome(){
-	var home = document.getElementsByClassName("home")[0];
-	var rules = document.getElementsByClassName("rules")[0];
-	var contacts = document.getElementsByClassName("contacts")[0];
-	home.style.display = "block";
-	rules.style.display = "block";
-	contacts.style.display = "block";
+	var wraper = document.getElementsByClassName("wraper")[0];
+	wraper.style.display = "flex";
 	var probElem = document.getElementsByClassName("prob")[0];
-	probElem.style.display = "none";	
-	home.style.display = "block";
+	probElem.style.display = "none";
+}
+
+var hamCheck = 1;
+function openMenu(){
+	goHome();
+	var menu = document.getElementsByClassName("links")[0];
+	menu.style.display = "flex";
+	setTimeout(function(){
+		menu.style.transform = "translateX(0)";
+	},10);
+	document.getElementsByClassName("hamburger")[0].style.display = "none";
+	hamCheck = 0;
 }
