@@ -129,7 +129,38 @@ function prevProblem() {
 	}
 }
 
+function probLoad(){
+	var head1 = document.getElementsByClassName("heading1")[0];
+	var head2 = document.getElementsByClassName("heading2")[0];
+	var content = document.getElementsByClassName("content")[0];
+	var img = document.getElementsByClassName("main")[0];
 
+
+	
+	var h1 = document.createElement("H1");
+	var t1 = document.createTextNode(problem.head1[prob]);
+	h1.appendChild(t1);
+	head1.innerHTML = "";
+	head1.appendChild(h1);
+	
+
+	var h2 = document.createElement("H1");
+	var t2 = document.createTextNode(problem.head2[prob]);
+	h2.appendChild(t2);
+	head2.innerHTML = "";
+	head2.appendChild(h2);
+	
+
+	var p1 = document.createElement("p");
+	var t3 = document.createTextNode(problem.content[prob]);
+	p1.appendChild(t3);
+	content.innerHTML = "";
+	content.appendChild(p1);
+
+
+	img.src = problem.img[prob];
+
+}
 function probChange(){
 	var head1 = document.getElementsByClassName("heading1")[0];
 	var head2 = document.getElementsByClassName("heading2")[0];
@@ -157,18 +188,17 @@ function probChange(){
 		head2.innerHTML = "";
 		head2.appendChild(h2);
 		head2.style.animation = "openRegContainer 0.5s ease 1 forwards";
-	head2.style.animation = "openRegContainer 0.5s ease 1 forwards";
 	}, 500);	
 
 
-	content.style.animation = "closeReg 0.5s ease 1 forwards";
+	content.firstElementChild.style.animation = "closeReg 0.5s ease 1 forwards";
 	setTimeout(function(){
 		var p1 = document.createElement("p");
 		var t3 = document.createTextNode(problem.content[prob]);
 		p1.appendChild(t3);
 		content.innerHTML = "";
 		content.appendChild(p1);
-	content.style.animation = "openReg 0.5s ease 1 forwards";
+	content.firstElementChild.style.animation = "openReg 0.5s ease 1 forwards";
 	}, 500);	
 
 
