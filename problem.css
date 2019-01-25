@@ -4,7 +4,7 @@ body{
     width: 100vw;
     padding: 0;
     background: url("svg/ProblemStatements1.svg");
-    background-size: cover;
+    background-size: 100% 100%;
     overflow: hidden;
 }
 ::-webkit-scrollbar {
@@ -29,7 +29,7 @@ body{
     height: 20vh;
     width: 50vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     z-index: 20;
 }
 .heading1 {
@@ -46,13 +46,6 @@ body{
     font-weight: 500;
     margin-right: 3px;
     margin-left: 0;
-}
-.logo{
-    width: 266px;
-    height: 49px;
-    background: url("svg/apogeelogo.svg");
-    background-size: cover;
-    margin: 5vh;
 }
 .content{
     position: absolute;
@@ -153,11 +146,6 @@ body{
     .heading1 h1, .heading2 h1 {
         font-size: 5rem;
     }
-
-    .logo{
-        width: 220px;
-        height: 40.5px;
-    }
 }
 
 
@@ -180,10 +168,6 @@ body{
     .main {
         width: 400px;
     }
-    .logo{
-        width: 180px;
-        height: 33px;
-    }
     .content p{
         font-size: 1.5rem;
     }
@@ -198,10 +182,6 @@ body{
     .main {
         width: 350px;
     }
-    .logo{
-        width: 140px;
-        height: 25.8px;
-    }
     .content p{
         font-size: 1.5rem;
     }
@@ -215,10 +195,6 @@ body{
     }
     .main {
         width: 270px;
-    }
-    .logo{
-        width: 100px;
-        height: 18.5px;
     }
     .content p{
         font-size: 1rem;
@@ -296,10 +272,6 @@ body{
     .leftarrow{
         width: 18px;
         height: 30px;
-    }
-    .logo{
-        height: 29px;
-        width: 160px;
     }
     .nav{
         width: 100vw;

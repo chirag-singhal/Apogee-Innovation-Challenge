@@ -218,16 +218,12 @@ h5 {
 .hamburger{
     display: none;
 }
-.homeButton {
+.backButton {
     position: absolute;
-    bottom: 8vh;
-    right: 5vw;
-    font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
-    text-decoration: none;
-    height: 25px;
-    color: #fff;
-    padding: 10px 10px;
+    top: 40px;
+    left: 10px;
+    height: 75px;
+    width: 175px;
     cursor: pointer;
 }
 
@@ -310,7 +306,7 @@ h5 {
         padding: 0;
         text-align: center;
     }
-    .homeButton{
+    .backButton{
         display: none;
     }
     .problem h2{
