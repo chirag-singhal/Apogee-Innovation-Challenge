@@ -129,6 +129,7 @@ function prevProblem() {
 }
 
 function probLoad(){
+	
 	var head1 = document.getElementsByClassName("heading1")[0];
 	var head2 = document.getElementsByClassName("heading2")[0];
 	var content = document.getElementsByClassName("content")[0];
