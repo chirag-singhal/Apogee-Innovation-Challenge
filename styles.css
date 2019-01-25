@@ -146,8 +146,7 @@ h3 {
     margin-top: 10vh;
 }
 .regContainer {
-    display: none;;
-    background-color: rgba(0,0,0,0.7);
+    display: none;
     position: absolute;
     top: 0;
     height: 100vh;
@@ -163,6 +162,7 @@ h3 {
     padding: 2vh 5vw;
     background-color: #fff;
     overflow-y: scroll;
+    box-shadow: 0 0 25vw 25vw #565656;
     transform: translateY(-50%);
     transition: 1s;
 }
@@ -191,6 +191,9 @@ h4 {
     background: #63ddc9;
     border-radius: 50px / 45px;
     cursor: pointer;
+}
+.regButton:nth-of-type(3) {
+    opacity: 0.5;
 }
 h5 {
     font-size: 3.5vh;
