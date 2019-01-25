@@ -68,6 +68,16 @@ function navigate(n){
 var x=0;
 function addMember(){
 	x++;
+	if(x==1)
+	{
+		document.getElementsByClassName("regButton")[1].style.opacity = 1;
+		document.getElementsByClassName("regButton")[1].disabled = false;
+	}
+	if(x==3)
+	{
+		document.getElementsByClassName("regButton")[0].style.opacity = 0.5;
+		document.getElementsByClassName("regButton")[0].disabled = true;
+	}
 	if(x<=3)
 	{
 		var parent = document.getElementsByClassName("members")[0];
@@ -79,6 +89,30 @@ function addMember(){
 		txtBox.setAttribute("type", "text");
 		parent.appendChild(txtBox);
 		parent.appendChild(document.createElement("br"));
+	}
+}
+
+function removeMember(){
+	x--;
+	if(x==0)
+	{
+		document.getElementsByClassName("regButton")[1].style.opacity = 0.5;
+		document.getElementsByClassName("regButton")[1].disabled = true;
+	}
+	if(x==2)
+	{
+		document.getElementsByClassName("regButton")[0].style.opacity = 1;
+		document.getElementsByClassName("regButton")[0].disabled = false;
+	}
+	if(x>=0)
+	{
+		var parent = document.getElementsByClassName("members")[0];
+		parent.removeChild(parent.lastChild);
+		parent.removeChild(parent.lastChild);
+		parent.removeChild(parent.lastChild);
+		parent.removeChild(parent.lastChild);
+		parent.removeChild(parent.lastChild);
+		parent.removeChild(parent.lastChild);
 	}
 }
 

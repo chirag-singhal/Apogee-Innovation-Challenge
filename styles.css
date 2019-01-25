@@ -146,8 +146,7 @@ h3 {
     margin-top: 10vh;
 }
 .regContainer {
-    display: none;;
-    background-color: rgba(0,0,0,0.7);
+    display: none;
     position: absolute;
     top: 0;
     height: 100vh;
@@ -158,13 +157,14 @@ h3 {
 }
 .register {
     width: 40vw;
-    height: 79.5vh;
+    height: 80vh;
     margin: 8vh 25vw;
     padding: 2vh 5vw;
     background-color: #fff;
     overflow-y: scroll;
     transform: translateY(-50%);
     transition: 1s;
+    box-shadow: 0 0 25vw 25vw rgba(0, 0, 0, 0.9);
 }
 .register > p {
     font-size: 2vh;
@@ -191,6 +191,9 @@ h4 {
     background: #63ddc9;
     border-radius: 50px / 45px;
     cursor: pointer;
+}
+.regButton:nth-of-type(3) {
+    opacity: 0.4;
 }
 h5 {
     font-size: 3.5vh;
@@ -240,6 +243,15 @@ h5 {
     height: 30px;
     cursor: pointer;
     display: none;
+}
+.register > p > a:link {
+    color: #2dc9af;
+}
+.register > p > a:active {
+    color: #2dc9af;
+}
+.register > p > a:visited {
+    color: #2dc9af;
 }
 
 
