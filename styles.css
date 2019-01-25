@@ -408,3 +408,23 @@ h5 {
         opacity: 0;
     }
 }
+@keyframes openProb {
+    from {
+        transform: translate(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes closeProb {
+    from {
+        transform: translate(0);
+        opacity: 1;
+    }
+    to {
+        transform: translate(100%);
+        opacity: 0;
+    }
+}

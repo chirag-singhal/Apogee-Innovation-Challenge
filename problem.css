@@ -329,3 +329,59 @@ body{
         font-size: 4vw;
     }
 }
+@keyframes openReg {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes openRegContainer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes closeReg {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+@keyframes closeRegContainer {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes openProb {
+    from {
+        transform: translate(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes closeProb {
+    from {
+        transform: translate(0);
+        opacity: 1;
+    }
+    to {
+        transform: translate(100%);
+        opacity: 0;
+    }
+}

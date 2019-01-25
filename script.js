@@ -5,34 +5,59 @@ function navigate(n){
 		var menu = document.getElementsByClassName("links")[0];
 		menu.style.transform = "translateX(-100vw)";
 		document.getElementsByClassName("hamburger")[0].style.display = "block";
+		setTimeout(function(){
+			var menu = document.getElementsByClassName("links")[0];
+			menu.style.display = "none";
+		}, 10);
 	}
-	setTimeout(function(){
-		menu.style.display = "none";
-	}, 10);
 	if(n!=c)
 	{
 		var home = document.getElementsByClassName("home")[0];
 		var rules = document.getElementsByClassName("rules")[0];
 		var contacts = document.getElementsByClassName("contacts")[0];
-		home.style.display = "none";
-		rules.style.display = "none";
-		contacts.style.display = "none";
 		switch(n){
 			case 0:
 			{
+				rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				setTimeout(function(){
+				rules.style.display = "none";
+				contacts.style.display = "none";
+				}, 400);
+				setTimeout(function(){
 				home.style.display = "flex";
+				home.style.animation = "openRegContainer 0.5s ease 1 forwards";
+				}, 500);
 				c = 0;
 				break;
 			}
 			case 1:
 			{
+				home.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				setTimeout(function(){
+				home.style.display = "none";
+				contacts.style.display = "none";
+				}, 400);
+				setTimeout(function(){
 				rules.style.display = "block";
+				rules.style.animation = "openRegContainer 0.5s ease 1 forwards";
+				}, 500);
 				c = 1;
 				break;
 			}
 			case 2:
 			{
+				home.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				setTimeout(function(){
+				home.style.display = "none";
+				rules.style.display = "none";
+				}, 400);
+				setTimeout(function(){
 				contacts.style.display = "block";
+				contacts.style.animation = "openRegContainer 0.5s ease 1 forwards";
+				}, 500);
 				c = 2;
 				break;
 			}
@@ -62,15 +87,15 @@ function openReg(){
 	var elem1 = document.getElementsByClassName("regContainer")[0];
 	var elem2 = document.getElementsByClassName("register")[0];
 	elem1.style.display = "block";
-	elem2.style.animation = "openReg 1s ease 1 forwards";
-	elem1.style.animation = "openRegContainer 1s ease 1 forwards";
+	elem2.style.animation = "openReg 0.5s ease 1 forwards";
+	elem1.style.animation = "openRegContainer 0.5s ease 1 forwards";
 }
 
 function closeReg(){
 	var elem1 = document.getElementsByClassName("regContainer")[0];
 	var elem2 = document.getElementsByClassName("register")[0];
-	elem2.style.animation = "closeReg 1s ease 1 forwards";
-	elem1.style.animation = "closeRegContainer 1s ease 1 forwards";
+	elem2.style.animation = "closeReg 0.5s ease 1 forwards";
+	elem1.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 	setTimeout(function(){
 		elem1.style.display = "none";
 	}, 1000);
@@ -111,22 +136,48 @@ function probChange(){
 	var content = document.getElementsByClassName("content")[0];
 	var img = document.getElementsByClassName("main")[0];
 
-	var h1 = document.createElement("H1");
-	var t1 = document.createTextNode(problem.head1[prob]);
-	h1.appendChild(t1);
-	head1.innerHTML = "";
-	head1.appendChild(h1);
-	var h2 = document.createElement("H1");
-	var t2 = document.createTextNode(problem.head2[prob]);
-	h2.appendChild(t2);
-	head2.innerHTML = "";
-	head2.appendChild(h2);
-	var p1 = document.createElement("p");
-	var t3 = document.createTextNode(problem.content[prob]);
-	p1.appendChild(t3);
-	content.innerHTML = "";
-	content.appendChild(p1);
-	img.src = problem.img[prob];
+
+	
+	head1.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+	setTimeout(function(){
+		var h1 = document.createElement("H1");
+		var t1 = document.createTextNode(problem.head1[prob]);
+		h1.appendChild(t1);
+		head1.innerHTML = "";
+		head1.appendChild(h1);
+		head1.style.animation = "openRegContainer 0.5s ease 1 forwards";
+	}, 500);
+
+
+	head2.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+	setTimeout(function(){
+		var h2 = document.createElement("H1");
+		var t2 = document.createTextNode(problem.head2[prob]);
+		h2.appendChild(t2);
+		head2.innerHTML = "";
+		head2.appendChild(h2);
+		head2.style.animation = "openRegContainer 0.5s ease 1 forwards";
+	head2.style.animation = "openRegContainer 0.5s ease 1 forwards";
+	}, 500);	
+
+
+	content.style.animation = "closeReg 0.5s ease 1 forwards";
+	setTimeout(function(){
+		var p1 = document.createElement("p");
+		var t3 = document.createTextNode(problem.content[prob]);
+		p1.appendChild(t3);
+		content.innerHTML = "";
+		content.appendChild(p1);
+	content.style.animation = "openReg 0.5s ease 1 forwards";
+	}, 500);	
+
+
+	img.style.animation = "closeProb 0.5s ease 1 forwards";
+	setTimeout(function(){
+		img.src = problem.img[prob];
+	img.style.animation = "openProb 0.5s ease 1 forwards";
+	}, 500);	
+
 }
 var problem = 
 {
@@ -150,6 +201,7 @@ function viewProblem(){
 	wraper.style.display = "none";
 	var probElem = document.getElementsByClassName("prob")[0];
 	probElem.style.display = "block";
+	probElem.style.animation = "openProb 0.5s ease 1 forwards";
 	window.addEventListener("keyup", function(e){
 		if(e.key == "ArrowRight" | e.key == "ArrowUp")
 			nextProblem();
@@ -161,7 +213,10 @@ function goHome(){
 	var wraper = document.getElementsByClassName("wraper")[0];
 	wraper.style.display = "flex";
 	var probElem = document.getElementsByClassName("prob")[0];
-	probElem.style.display = "none";
+	probElem.style.animation = "closeProb 0.5s ease 1 forwards";
+	setTimeout(function(){
+		probElem.style.display = "none";
+	}, 500);
 }
 
 var hamCheck = 1;
