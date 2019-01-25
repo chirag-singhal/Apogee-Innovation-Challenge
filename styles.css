@@ -90,7 +90,7 @@ body{
     font-size: 1.4rem;
     overflow: hidden;
 }
-.problem h2{
+#viewprob{
     background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
     padding: 1.6vh 2vw;
     font-size: 1.6vw;
@@ -100,8 +100,9 @@ body{
 .problem h3{
     display: none;
     cursor: pointer;
+    font-weight: 600;
 }
-.problem h2 a{
+#viewprob a{
     text-decoration: none;
     color: white;
 }
@@ -320,7 +321,7 @@ h5 {
     .backButton{
         display: none;
     }
-    .problem h2{
+    #viewprob{
         background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
         width: 70vw;
         padding: 2vh 2vw;
