@@ -1,17 +1,17 @@
 body{
     margin: 0;
+    height: 100vh;
+    width: 100vw;
     padding: 0;
+    background: url("svg/ProblemStatements1.svg");
+    background-size: cover;
     overflow: hidden;
 }
 ::-webkit-scrollbar {
     display:none;
 }
 .probWraper{
-    height:100vh;
     width: 100vw;
-    background: url("svg/ProblemStatements1.svg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     display: flex;
     z-index: 5;
 }
