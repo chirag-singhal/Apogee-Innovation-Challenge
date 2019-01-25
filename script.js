@@ -264,3 +264,11 @@ window.onload = function() {
 	var iframe = document.getElementById('ifr');
 	iframe.setAttribute('src', 'problem.html');
   }
+
+function closeMenu(){
+  	var menu = document.getElementsByClassName("links")[0];
+	menu.style.transform = "translateX(-100vw)";
+	setTimeout(function(){
+		document.getElementsByClassName("hamburger")[0].style.display = "block";
+	}, 480);
+}
