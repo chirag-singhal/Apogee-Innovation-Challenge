@@ -282,9 +282,11 @@ body{
     .logohead{
         position: absolute;
         top: 12vh;
-        left: 35vw;
-        width: 4vw;
-        display: block;
+        left: 0;
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        justify-content: center;
     }
     .rightarrow{
         left: 94vw;
@@ -313,8 +315,7 @@ body{
         cursor: pointer;
     }
     .main {
-        width: 30vw;
-        height: 30vw;
+        height: 100px;
         margin: 0;
         padding: 0;
     }
