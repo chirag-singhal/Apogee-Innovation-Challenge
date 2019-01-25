@@ -307,6 +307,7 @@ h5 {
     }
     .nav {
         justify-content: flex-end;
+        z-index: 45;
     }
     .circle{
         display: none;
@@ -357,7 +358,7 @@ h5 {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 30;
+        z-index: 50;
     }
     .register{
         width: 90vw;
