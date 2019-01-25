@@ -217,6 +217,7 @@ h5 {
     z-index: 20;
     display: none;
     overflow: hidden;
+    position: fixed;
 }
 .hamburger{
     display: none;
@@ -320,7 +321,7 @@ h5 {
         display: none;
     }
     .problem h2{
-        background: #63ddc9;
+        background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
         width: 70vw;
         padding: 2vh 2vw;
         font-size: 4vw;
@@ -349,7 +350,7 @@ h5 {
         display: block;
         height: 50px;
         width: 20vw;
-        margin: 3.5vh 3vw;
+        margin: .5vh 3vw;
         background: url("svg/menu.svg");
         cursor: pointer;
         position: absolute;

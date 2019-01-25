@@ -289,6 +289,7 @@ body{
     }
     .main {
         height: 100px;
+        max-width: 60vw;
         margin: 0;
         padding: 0;
     }
