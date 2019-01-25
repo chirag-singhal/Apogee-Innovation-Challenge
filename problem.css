@@ -101,7 +101,7 @@ body{
     display: none;
 }
 .download h2{
-    background: #63ddc9;
+    background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
     padding: 2vh 2vw;
     border-radius: 50px / 45px;
     cursor: pointer;
