@@ -84,6 +84,7 @@ body{
     justify-content: flex-end;
     font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
+    overflow: hidden;
 }
 .problem h2{
     background: #63ddc9;
