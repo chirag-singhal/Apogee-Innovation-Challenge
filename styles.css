@@ -96,8 +96,9 @@ body{
     font-size: 1.6vw;
     border-radius: 50px / 45px;
     cursor: pointer;
+    font-weight: 600;
 }
-.problem h3{
+#regist{
     display: none;
     cursor: pointer;
     font-weight: 600;
@@ -106,7 +107,7 @@ body{
     text-decoration: none;
     color: white;
 }
-.problem h3 a{
+#regist a{
     text-decoration: none;
     color: white;
 }
@@ -329,7 +330,7 @@ h5 {
         text-align: center;
         border-radius: 50px / 45px;
     }
-    .problem h3{
+    #regist{
         display: block;
         width: 40vw;
         margin-bottom: 0;
