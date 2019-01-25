@@ -366,9 +366,8 @@ h5 {
         width: 100vw;
         height: 100vh;
         background-color: #63ddc9;
-        display: none;
         transform: translateX(-100vw);
-        transition: 0.5s ease-in;
+        transition: 0.5s cubic-bezier(.03,.44,.46,.85);
     }
     .nav-links{
         text-decoration: none;

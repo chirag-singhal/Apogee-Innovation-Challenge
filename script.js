@@ -4,11 +4,10 @@ function navigate(n){
 	{
 		var menu = document.getElementsByClassName("links")[0];
 		menu.style.transform = "translateX(-100vw)";
-		document.getElementsByClassName("hamburger")[0].style.display = "block";
 		setTimeout(function(){
 			var menu = document.getElementsByClassName("links")[0];
-			menu.style.display = "none";
-		}, 10);
+			document.getElementsByClassName("hamburger")[0].style.display = "block";
+		}, 480);
 	}
 	if(n!=c)
 	{
