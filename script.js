@@ -62,18 +62,18 @@ function openReg(){
 	var elem1 = document.getElementsByClassName("regContainer")[0];
 	var elem2 = document.getElementsByClassName("register")[0];
 	elem1.style.display = "block";
-	elem2.style.transform = "translateY(0)";
-	setTimeout(function(){
-		elem1.style.opacity = 1;
-	}, 1);
+	elem2.style.animation = "openReg 1s ease 1 forwards";
+	elem1.style.animation = "openRegContainer 1s ease 1 forwards";
 }
 
 function closeReg(){
 	var elem1 = document.getElementsByClassName("regContainer")[0];
 	var elem2 = document.getElementsByClassName("register")[0];
-	elem1.style.display = "none";
-	elem2.style.transform = "translateY(-50%)";
-	elem1.style.opacity = 0;
+	elem2.style.animation = "closeReg 1s ease 1 forwards";
+	elem1.style.animation = "closeRegContainer 1s ease 1 forwards";
+	setTimeout(function(){
+		elem1.style.display = "none";
+	}, 1000);
 }
 
 var prob = 0;
