@@ -8,6 +8,7 @@ function navigate(n){
 			var menu = document.getElementsByClassName("links")[0];
 			document.getElementsByClassName("hamburger")[0].style.display = "block";
 		}, 480);
+		goHome();
 	}
 	if(n!=c)
 	{
@@ -164,6 +165,14 @@ function prevProblem() {
 
 function probLoad(){
 	
+	window.addEventListener("keyup", function(e){
+		if(e.key == "ArrowRight" | e.key == "ArrowUp")
+			nextProblem();
+		if(e.key == "ArrowDown" | e.key == "ArrowLeft")
+			prevProblem();
+	});
+
+
 	var head1 = document.getElementsByClassName("heading1")[0];
 	var head2 = document.getElementsByClassName("heading2")[0];
 	var content = document.getElementsByClassName("content")[0];
@@ -261,21 +270,12 @@ var problem =
 }
 
 function viewProblem(){
-	var wraper = document.getElementsByClassName("wraper")[0];
-	wraper.style.display = "none";
 	var probElem = document.getElementsByClassName("prob")[0];
 	probElem.style.display = "block";
 	probElem.style.animation = "openProb 0.5s ease 1 forwards";
-	window.addEventListener("keyup", function(e){
-		if(e.key == "ArrowRight" | e.key == "ArrowUp")
-			nextProblem();
-		if(e.key == "ArrowDown" | e.key == "ArrowLeft")
-			prevProblem();
-	});
+	probLoad();
 }
 function goHome(){
-	var wraper = document.getElementsByClassName("wraper")[0];
-	wraper.style.display = "flex";
 	var probElem = document.getElementsByClassName("prob")[0];
 	probElem.style.animation = "closeProb 0.5s ease 1 forwards";
 	setTimeout(function(){
@@ -285,7 +285,6 @@ function goHome(){
 
 var hamCheck = 1;
 function openMenu(){
-	goHome();
 	var menu = document.getElementsByClassName("links")[0];
 	menu.style.display = "flex";
 	setTimeout(function(){
@@ -294,11 +293,6 @@ function openMenu(){
 	document.getElementsByClassName("hamburger")[0].style.display = "none";
 	hamCheck = 0;
 }
-window.onload = function() {
-	var iframe = document.getElementById('ifr');
-	iframe.setAttribute('src', 'problem.html');
-  }
-
 function closeMenu(){
   	var menu = document.getElementsByClassName("links")[0];
 	menu.style.transform = "translateX(-100vw)";

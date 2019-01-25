@@ -9,10 +9,46 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
     <link rel="prefetch" href="problem.html">
     <link rel="prefetch" href="svg/ProblemStatements1.svg">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="hamburger" onclick="openMenu()"></div>
     <div class="wraper">
+
+
+        <div class="prob">
+            <div class="probWraper">
+                <div class="half1">
+                    <div class="leftarrow" onclick="prevProblem()"></div>
+                    <div class="navProb">
+                        <!-- <div class="hamburger" onclick="openMenu()"></div> -->
+                        <img src="svg/left-arrow.svg" class="backButton" onclick="goHome()">
+                        <div class="heading1">
+                            <!-- <h1>ERIC</h1> -->
+                        </div>
+                    </div>
+                    <div class="content">
+                        <!-- <p>Ericsson is one of the leading brands in the field of networking and telecom headquartered in Stockholm. It offers services, software and infrastructure in IT for telecom operators, mobile and fixed broadband, operations and business support services,cable television, IPTV and video systems. It is presently working on the revolutionary 5G technology.</p> -->
+                    </div>
+                    <div class="download">
+                        <h2><a href = "#">Download Problem Statement</a></h2>
+                    </div>
+                </div>
+                <div class="half2">
+                    <div class="rightarrow" onclick="nextProblem()"></div>
+                    <div class="heading2">
+                        <!-- <h1>SSON</h1> -->
+                    </div>
+                    <div class="logohead">
+                        <img class="main">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
         <div class="circle"></div>
         <div class="nav">
             <div class="logo"></div>
@@ -88,10 +124,6 @@
             </p>
         </div>
     </div>
-    <div class="prob">
-        <iframe id="ifr" frameboder = "0" onload="this.width=screen.width;this.height=screen.height;"></iframe>
-        <img src="svg/left-arrow.svg" class="backButton" onclick="goHome()">
-    </div>
-    <script src="script.js"></script>
+
 </body>
 </html>
