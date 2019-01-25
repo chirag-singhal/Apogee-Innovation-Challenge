@@ -516,7 +516,8 @@ h5 {
     margin: 0;
     font-family: 'SegoeUI', Segoe UI;
     max-height: 50vh;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .heading2 h1{
     font-family: Bahnschrift;
