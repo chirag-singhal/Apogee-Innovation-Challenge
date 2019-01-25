@@ -63,7 +63,11 @@ body{
 } */
 .home {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
     color: #2dc9af;
 }
 .home h1{
@@ -72,7 +76,6 @@ body{
     font-family: Bahnschrift;
     font-weight: 500;
     margin-left: 4vw;
-    margin-top: 20vh;
 }
 .problem{
     position: absolute;
