@@ -118,6 +118,7 @@ h3 {
     color: #2dc9af;
     font-weight: 500;
     margin: 7vh;
+    margin-top: 3vh;
 }
 .container {
     width: 100vw;
@@ -228,9 +229,9 @@ h5 {
 .backButton {
     position: absolute;
     top: 40px;
-    left: 10px;
+    left: 25px;
     height: 75px;
-    width: 175px;
+    width: 50px;
     cursor: pointer;
 }
 
