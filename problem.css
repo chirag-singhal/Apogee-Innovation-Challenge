@@ -67,7 +67,7 @@ body{
     font-size: 2rem;
     padding: 0 8vw;
     margin: 0;
-    font-family: Bahnschrift;
+    font-family: 'SegoeUI', Segoe UI;
     max-height: 50vh;
     overflow: scroll;
 }
@@ -101,7 +101,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'RobotoCondensed-Bold', Roboto;
     font-size: 1.3vw;
 }
 .hamburger{

@@ -85,7 +85,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'RobotoCondensed-Bold', Roboto;
     font-size: 1.4rem;
     overflow: hidden;
 }
