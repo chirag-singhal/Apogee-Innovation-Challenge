@@ -136,6 +136,20 @@ html,body{
     width: 80vw;
     margin: 0 10vw;
 }
+.rules h3{
+    font-size: 8vh;
+    text-align: center;
+    font-family: Bahnschrift;
+    color: #2dc9af;
+    font-weight: 500;
+}
+.contacts h3{
+    font-size: 8vh;
+    text-align: center;
+    font-family: Bahnschrift;
+    color: #2dc9af;
+    font-weight: 500;
+}
 .rules > p {
     font-size: 4vh;
     font-family: Bahnschrift;
@@ -145,6 +159,8 @@ html,body{
     opacity: 0;
     width: 80vw;
     margin: 0 10vw;
+    position: absolute;
+    top: 20vh;
 }
 .contacts > p {
     font-size: 5vh;
