@@ -1,7 +1,6 @@
-body{
+html,body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 .wraper{
     height: 100vh;
@@ -50,7 +49,7 @@ body{
 .circle{
     height: 135vh;
     width: 80vw;
-    background: url(svg/circle.svg);
+    background: url("svg/853.png");
     background-size: cover;
     position: absolute;
     top: -35vh;

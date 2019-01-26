@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
     <link rel="prefetch" href="problem.html">
     <link rel="prefetch" href="svg/ProblemStatements1.svg">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="hamburger" onclick="openMenu()"></div>
@@ -89,8 +88,9 @@
         </div>
     </div>
     <div class="prob">
-        <iframe id="ifr" style="width: 100vw; height: 100vh;"></iframe>
+        <iframe id="ifr" frameboder = "0" onload="this.width=screen.width;this.height=screen.height;"></iframe>
         <img src="svg/left-arrow.svg" class="backButton" onclick="goHome()">
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
