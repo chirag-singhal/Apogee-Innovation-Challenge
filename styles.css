@@ -356,7 +356,7 @@ h5 {
     #viewprob{
         background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
         width: 70vw;
-        font-weight: 500;
+        font-weight: bold;
         margin: 7vh;
         color: white;
         margin-top: 3vh;
@@ -371,6 +371,7 @@ h5 {
         margin-bottom: 0;
         background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
         color: white;
+        font-weight: bold;
         font-size: 4vw;
         padding: 2vh 2vw;
         text-align: center;
@@ -590,6 +591,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    font-weight: bold;
     font-family: 'RobotoCondensed-Bold', Roboto;
     font-size: 1.1vw;
 }
