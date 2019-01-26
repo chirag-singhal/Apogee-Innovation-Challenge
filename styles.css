@@ -81,7 +81,7 @@ html,body{
 .home h1{
     font-size: 11vh;
     width: 50vw;
-    font-family: Bahnschrift;
+    font-family: Signika;
     font-weight: 500;
     margin-left: 4vw;
 }
@@ -122,7 +122,7 @@ html,body{
 /* h3 {
     font-size: 8vh;
     text-align: center;
-    font-family: Bahnschrift;
+    font-family: Signika;
     color: #2dc9af;
     font-weight: 500;
     margin: 7vh;
@@ -139,20 +139,20 @@ html,body{
 .rules h3{
     font-size: 8vh;
     text-align: center;
-    font-family: Bahnschrift;
+    font-family: Signika;
     color: #2dc9af;
     font-weight: 500;
 }
 .contacts h3{
     font-size: 8vh;
     text-align: center;
-    font-family: Bahnschrift;
+    font-family: Signika;
     color: #2dc9af;
     font-weight: 500;
 }
 .rules > p {
     font-size: 4vh;
-    font-family: Bahnschrift;
+    font-family: Signika;
     color: #565656;
 }
 .contacts {
@@ -164,7 +164,7 @@ html,body{
 }
 .contacts > p {
     font-size: 5vh;
-    font-family: Bahnschrift;
+    font-family: Signika;
     color: #565656;
     text-align: center;
     margin-top: 10vh;
@@ -193,19 +193,19 @@ html,body{
 }
 .register > p {
     font-size: 2vh;
-    font-family: Bahnschrift;
+    font-family: Signika;
     color: #565656;
     text-align: center;
 }
 form {
     font-size: 1.5vh;
-    font-family: Bahnschrift;
+    font-family: Signika;
     color: #565656;
     text-align: center;
 }
 h4 {
     font-size: 2vh;
-    font-family: Bahnschrift;
+    font-family: Signika;
     color: #565656;
     font-weight: 500;
     margin: 0;
@@ -223,7 +223,7 @@ h4 {
 h5 {
     font-size: 3.5vh;
     text-align: center;
-    font-family: Bahnschrift;
+    font-family: Signika;
     color: #2dc9af;
     font-weight: 500;
     margin: 3vh;
@@ -347,7 +347,7 @@ h5 {
         width: 80vw;
         font-size: 2.8rem;
         padding: 0;
-        font-family: Bahnschrift;
+        font-family: Signika;
         text-align: center;
     }
     .backButton{
@@ -534,7 +534,7 @@ h5 {
     white-space: nowrap;
 }
 .heading1 h1{
-    font-family: Bahnschrift;
+    font-family: Signika;
     color: #2dc9af;
     margin: 2vh;
     font-size: 7rem;
@@ -561,7 +561,7 @@ h5 {
     overflow-x: hidden;
 }
 .heading2 h1{
-    font-family: Bahnschrift;
+    font-family: Signika;
     color: white;
     margin: 2vh;
     font-size: 7rem;
