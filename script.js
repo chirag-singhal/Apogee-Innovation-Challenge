@@ -138,7 +138,7 @@ function closeReg(){
 var prob = 0;
 function nextProblem() {
 		
-	if(prob < 7)
+	if(prob < 4)
 	{
 		prob++;
 		probChange();
@@ -193,11 +193,14 @@ function probLoad(){
 	head2.innerHTML = "";
 	head2.appendChild(h2);
 	
-
+	var r1 = document.createElement("h6");
+	var rt = document.createTextNode(problem.rewards[prob]);
+	r1.appendChild(rt);
 	var p1 = document.createElement("p");
 	var t3 = document.createTextNode(problem.content[prob]);
 	p1.appendChild(t3);
 	content.innerHTML = "";
+	content.appendChild(r1);
 	content.appendChild(p1);
 
 
@@ -235,13 +238,19 @@ function probChange(){
 
 
 	content.firstElementChild.style.animation = "closeReg 0.5s ease 1 forwards";
+	content.lastElementChild.style.animation = "closeReg 0.5s ease 1 forwards";
 	setTimeout(function(){
+		var r1 = document.createElement("h6");
+		var rt = document.createTextNode(problem.rewards[prob]);
+		r1.appendChild(rt);
 		var p1 = document.createElement("p");
 		var t3 = document.createTextNode(problem.content[prob]);
 		p1.appendChild(t3);
 		content.innerHTML = "";
+		content.appendChild(r1);
 		content.appendChild(p1);
 	content.firstElementChild.style.animation = "openReg 0.5s ease 1 forwards";
+	content.lastElementChild.style.animation = "openReg 0.5s ease 1 forwards";
 	}, 500);	
 
 
@@ -249,24 +258,21 @@ function probChange(){
 	setTimeout(function(){
 		img.src = problem.img[prob];
 	img.style.animation = "openProb 0.5s ease 1 forwards";
-	}, 500);	
-
+	}, 500);
 }
 var problem = 
 {
-    head1: ["daVinci", "Eric", "GE Hea", "Hacke", "IP", "Ha", "Rolls-", "GNO"],
-    head2: ["Creations", "sson", "lthcare", "rEarth", "CA", "rVa", "Royce", "MIKX"],
+    head1: ["REFLEXIS ", "ZU", "ANT S", "GE HEA", "NETS"],
+    head2: [" SYSTEMS", "LIP", "TUDIO", "LTHCARE", "KOPE"],
+    rewards: ["Rs.50,000/- + Summer Internships", "Rs.40,000/-", "Rs.30,000/- + Summer Internships", "Summer Internships", "Rs.1,00,000/-"],
     content: [
-    "Da Vinci Creations is a New York-based company that specializes in the importation and marketing of Italian and German-made kitchens, bathroom cabinets and contemporary furniture to the United States. We go beyond managing the importation of the products, but also establish a business relationship between Italian and German companies and the U.S. counterpart.Go to: davinci-creations.com",
-    "Ericsson is one of the leading brands in the field of networking and telecom headquartered in Stockholm. It offers services, software and infrastructure in IT for telecom operators,mobile and fixed broadband, operations and business support services,cable television, IPTV and video systems. It is presently working on the revolutionary 5G technology.",
-    "​​​GE Healthcare is an American pharmaceutical company and medical equipment manufacturer. It is a subsidiary of General Electric (GE), formerly headquartered in Little Chalfont, Buckinghamshire, United Kingdom; in early 2016 headquarters were moved to Chicago. The company provides medical imaging and information technologies, medical diagnostics, patient monitoring systems, drug discovery, bio pharmaceutical manufacturing technologies and performance solutions services",
-    "HackerEarth is a technology company that provides recruitment solutions. It helps companies find innovative solutions for their businesses. They love innovators who solve real world problems. It is also a platform for people to participate in hackathons and competitions and code their way into the industry. ​",
-    "Ipca Laboratories is an international pharmaceutical company based in Mumbai, India. It produces Theo bromine, Acetylthiophene, and P-Bromo Toluene as Active Pharmaceutical Ingredients (APIs). Ipca sells these APIs and their intermediates world over. It produces more than 150 formulations that include oral liquids, tablets, dry powders, and capsules. The various kinds of drug intermediates that the company manufactures include Theo bromine, Acetylthiophene, and P- Bromo Toluene and promotes over 36 countries of Asia, Africa, CIS, and South America, including Cambodia, Kazakhstan, Kenya, Mauritius, Myanmar, Nigeria, Oman, Russia, Sri Lanka, Sudan, Tanzania, Ukraine, Vietnam and Yemen. The main activities of company are to produce and market pharmaceuticals and drugs. The various products of the company include formulations, drug intermediates, and active pharmaceutical ingredients (API).",
-    "HarVa is an Indian Business process outsourcing Organization.It is the first NPO set up in rural India which employs only women.It also has a division, Community Based Farming & Waste Management, which trains men in latest farming techniques. The rural start up primarily focuses on Skill Development, BPO, Community based farming and Microfinance.",
-    "Rolls-Royce is a global company providing highly-efficient integrated power and propulsion solutions. Our power systems are predominantly used in aerospace, marine, energy and off-highway applications.",
-    "GNOMIKX is healthcare company. It offers personal genomics test for various lifestyle diseases like Diabetes, Obesity and Hypertension. Go to: gnomikx.com"
+    "Reflexis is the leading provider of real-time store operations solutions having been selected by more than 250 global retailers to simplify store operations, optimize labor spend, and improve store execution. The Reflexis ONE real-time work platform helps retailers drive simplification for stores and improved line-of-sight for field management resulting in significant time savings, precise execution, and superior customer experience.",
+    "Zulip, a GSoC company from past 3 years. Zulip deals with creating the perfect hybrid of online group chat and email threading model. A 100% open source software, Zulip works on latest technologies and thus has a high-quality code base.",
+    "A miscellany of Architecture, Nature, and Technology inspired by teamwork and intelligence of Ants, the Ant Studio works with a motive to bridge the gap between craft and machinery, hence pushing for designs that go beyond functional and aesthetic concern to concoct an affiliation between the built and natural.",
+    "GE Healthcare is an American multinational conglomerate incorporated in New York and headquartered in Chicago, Illinois. As of 2017, the company is a manufacturer and distributor of diagnostic imaging agents and radiopharmaceuticals for imaging modalities that are used in medical imaging procedures. The company offers dyes that are used in magnetic-resonance-imaging procedures. GE Healthcare also manufactures medical diagnostic equipment including CT image machines.",
+    "Netskope, Inc. is an American software company founded in 2012 that helps companies protect data and protect against threats in cloud applications, cloud infrastructure, and the web. Netskope is in a category of technology classified by Gartner as cloud access security brokers. Netskope is recognized as a leader in the Gartner Magic Quadrant for Cloud Access Security Brokers."
     ],
-    img: ["svg/davinciCreations.JPG", "svg/eric_logo.svg", "svg/GE_Healthcare.jpg", "svg/hackerearth.jpg", "svg/Ipca.jpg", "svg/harva.jpeg", "svg/Rolls_royce.jpg", "svg/gnomikx.png"]
+    img: ["svg/reflexis.png", "svg/zulip.jpeg", "svg/antstudio.png", "svg/GE_Healthcare.jpg", "svg/netskope.png"]
 }
 
 function viewProblem(){

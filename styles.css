@@ -10,7 +10,7 @@ html,body{
     height: 100vh;
     width: 100vw;
     background: url("svg/LandingPage.svg");
-    background-size: cover;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     z-index: 5;
@@ -87,8 +87,9 @@ html,body{
 }
 .problem{
     position: absolute;
+    bottom: 10vh;
     width: 100vw;
-    height: 90vh;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,7 +147,7 @@ html,body{
     margin: 0 15vw;
 }
 .rules > p {
-    font-size: 4vh;
+    font-size: 3.5vh;
     font-family: Bahnschrift;
     color: #565656;
 }
@@ -155,12 +156,17 @@ html,body{
     width: 80vw;
     margin: 0 10vw;
 }
-.contacts > p {
-    font-size: 5vh;
+.contacts > p > a {
+    text-decoration: none;
+    color: #2dc9af;
+    cursor: pointer;
+}
+.contacts > p, .content h6 {
+    font-size: 4vh;
     font-family: Bahnschrift;
     color: #565656;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 4vh;
 }
 .regContainer {
     display: none;
@@ -280,11 +286,11 @@ h5 {
         font-size: 7vh;
     }
     .rules > p {
-        font-size: 3vh;
+        font-size: 2.5vh;
         padding: 0;
     }
-    .contacts > p {
-        font-size: 4vh;
+    .contacts > p, .content h6 {
+        font-size: 3vh;
     }
 }
 
@@ -308,11 +314,11 @@ h5 {
         font-size: 6vh;
     }
     .rules > p {
-        font-size: 2.5vh;
+        font-size: 2vh;
         padding: 0;
     }
-    .contacts > p {
-        font-size: 3.5vh;
+    .contacts > p, .content h6 {
+        font-size: 2.5vh;
     }
 }
 
@@ -488,7 +494,7 @@ h5 {
 
 .probWraper{
     background: url("svg/ProblemStatements1.svg");
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -536,8 +542,9 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-.content p{
+.content p, .content h6 {
     color: #2e394c;
     font-size: 2rem;
     padding: 0 8vw;
@@ -653,7 +660,7 @@ h5 {
     .main {
         width: 400px;
     }
-    .content p{
+    .content p, .content h6{
         font-size: 1.5rem;
     }
 }
@@ -687,7 +694,10 @@ h5 {
 }
 
 
-@media all and (max-width:900px){
+@media all and (max-width: 700px){
+    .probWraper{
+        background-size: 200% 100%;
+    }
     .content{
         position: relative;
         height: 80vh;
@@ -701,11 +711,14 @@ h5 {
         height: 20px;
         width: 20px;
     }
+    .content h6 {
+        margin-top: 10vh;
+        font-size: 5vw;
+    }
     .content p{
         font-size: 5vw;
         color: #a6e6e1;
-        margin-top: 9vh;
-        height: 45vh;
+        height: 40vh;
         padding-left: 10vw;
         padding-right: 5vw;
         overflow: scroll;
@@ -794,7 +807,7 @@ h5 {
 }
 @keyframes openReg {
     from {
-        transform: translateY(-50%);
+        transform: translateY(-400px);
         opacity: 0;
     }
     to {
@@ -816,7 +829,7 @@ h5 {
         opacity: 1;
     }
     to {
-        transform: translateY(-50%);
+        transform: translateY(-400px);
         opacity: 0;
     }
 }
