@@ -221,7 +221,6 @@ h5 {
     z-index: 20;
     display: none;
     overflow: hidden;
-    position: fixed;
 }
 .hamburger{
     display: none;
