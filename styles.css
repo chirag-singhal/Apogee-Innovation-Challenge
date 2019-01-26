@@ -957,7 +957,8 @@ h5 {
         height: 100vh;
         background-color: #63ddc9;
         transform: translateX(-100vw);
-        transition: 0.5s cubic-bezier(.12,.57,.78,.34);
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(.1,.82,.79,1.32);
     }
     .nav-links{
         text-decoration: none;
