@@ -47,13 +47,13 @@ html,body{
     padding: 7px 15px;
 }
 .circle{
-    height: 135vh;
-    width: 80vw;
+    height: 100vh;
+    width: 50vw;
     background: url("svg/853.png");
     background-size: cover;
     position: absolute;
-    top: -35vh;
-    right: -2vw;
+    top: 0vh;
+    right: -24vw;
     transform-origin: 100% 65%;
     /* animation: spin 120s infinite linear; */
 }
@@ -145,7 +145,8 @@ h3 {
     margin-top: 10vh;
 }
 .regContainer {
-    display: none;
+    display: none;;
+    background-color: rgba(0,0,0,0.7);
     position: absolute;
     top: 0;
     height: 100vh;
@@ -156,14 +157,13 @@ h3 {
 }
 .register {
     width: 40vw;
-    height: 80vh;
+    height: 79.5vh;
     margin: 8vh 25vw;
     padding: 2vh 5vw;
     background-color: #fff;
     overflow-y: scroll;
     transform: translateY(-50%);
     transition: 1s;
-    box-shadow: 0 0 25vw 25vw rgba(0, 0, 0, 0.9);
 }
 .register > p {
     font-size: 2vh;
@@ -190,9 +190,6 @@ h4 {
     background: #63ddc9;
     border-radius: 50px / 45px;
     cursor: pointer;
-}
-.regButton:nth-of-type(3) {
-    opacity: 0.4;
 }
 h5 {
     font-size: 3.5vh;
@@ -242,15 +239,6 @@ h5 {
     height: 30px;
     cursor: pointer;
     display: none;
-}
-.register > p > a:link {
-    color: #2dc9af;
-}
-.register > p > a:active {
-    color: #2dc9af;
-}
-.register > p > a:visited {
-    color: #2dc9af;
 }
 
 
