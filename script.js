@@ -271,6 +271,8 @@ var problem =
 
 function viewProblem(){
 	var probElem = document.getElementsByClassName("prob")[0];
+	// var logo = document.getElementsByClassName('logo')[0];
+	// logo.style.display = "none";
 	// probElem.style.display = "block";
 	// var circle = document.getElementsByClassName("circle")[0];
 	// circle.style.display = "none";
@@ -279,7 +281,7 @@ function viewProblem(){
 }
 function goHome(){
 	var probElem = document.getElementsByClassName("prob")[0];
-	probElem.style.animation = "closeProb 0.5s cubic-bezier(.03,.44,.46,.85) forwards";
+	probElem.style.animation = "closeProb 0.5s ease-in forwards";
 	// var circle = document.getElementsByClassName("circle")[0];
 	// circle.style.display = "block";
 	setTimeout(function(){
