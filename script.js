@@ -8,7 +8,7 @@ function navigate(n){
 			var menu = document.getElementsByClassName("links")[0];
 			document.getElementsByClassName("hamburger")[0].style.display = "block";
 		}, 480);
-		// goHome();
+		goHome();
 	}
 	if(n!=c)
 	{
@@ -18,6 +18,7 @@ function navigate(n){
 		switch(n){
 			case 0:
 			{
+				probcheck = 0;
 				rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				// setTimeout(function(){
@@ -33,6 +34,7 @@ function navigate(n){
 			}
 			case 1:
 			{
+				probcheck = 0;
 				home.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				// setTimeout(function(){
@@ -48,6 +50,7 @@ function navigate(n){
 			}
 			case 2:
 			{
+				probcheck = 0;
 				home.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				// setTimeout(function(){
@@ -268,8 +271,9 @@ var problem =
     ],
     img: ["svg/davinciCreations.JPG", "svg/eric_logo.svg", "svg/GE_Healthcare.jpg", "svg/hackerearth.jpg", "svg/Ipca.jpg", "svg/harva.jpeg", "svg/Rolls_royce.jpg", "svg/gnomikx.png"]
 }
-
+var probcheck = 0;
 function viewProblem(){
+	probcheck = 1;
 	var probElem = document.getElementsByClassName("prob")[0];
 	// var logo = document.getElementsByClassName('logo')[0];
 	// logo.style.display = "none";
@@ -281,7 +285,10 @@ function viewProblem(){
 }
 function goHome(){
 	var probElem = document.getElementsByClassName("prob")[0];
-	probElem.style.animation = "closeProb 0.5s ease-in forwards";
+	if(probcheck == 1){
+		probElem.style.animation = "closeProb 0.5s ease-in forwards";
+	}
+	probcheck = 0;
 	// var circle = document.getElementsByClassName("circle")[0];
 	// circle.style.display = "block";
 	setTimeout(function(){
