@@ -368,7 +368,8 @@ h5 {
         display: block;
         height: 50px;
         width: 20vw;
-        margin: .5vh 3vw;
+        margin: 0 3vw;
+        transform: scale(0.9);
         background: url("svg/menu.svg");
         cursor: pointer;
         position: absolute;
