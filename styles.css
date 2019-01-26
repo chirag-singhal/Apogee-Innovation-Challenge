@@ -10,7 +10,7 @@ html,body{
     height: 100vh;
     width: 100vw;
     background: url("svg/LandingPage.svg");
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
     display: flex;
     flex-direction: column;
     z-index: 5;
@@ -494,7 +494,7 @@ h5 {
 
 .probWraper{
     background: url("svg/ProblemStatements1.svg");
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -696,7 +696,7 @@ h5 {
 
 @media all and (max-width: 700px){
     .probWraper{
-        background-size: 200% 100%;
+        background-size: 200vw 100vh;
     }
     .content{
         position: relative;
