@@ -119,22 +119,31 @@ html,body{
     text-decoration: none;
     color: white;
 }
-/* h3 {
-    font-size: 8vh;
+.rules h3 {
+    font-size: 7vh;
     text-align: center;
     font-family: Bahnschrift;
     color: #2dc9af;
     font-weight: 500;
     margin: 7vh;
     margin-top: 3vh;
-} */
+}
+.contacts h3 {
+    font-size: 7vh;
+    text-align: center;
+    font-family: Bahnschrift;
+    color: #2dc9af;
+    font-weight: 500;
+    margin: 7vh;
+    margin-top: 3vh;
+} 
 .container {
     width: 100vw;
 }
 .rules {
     opacity: 0;
-    width: 80vw;
-    margin: 0 10vw;
+    width: 70vw;
+    margin: 0 15vw;
 }
 .rules > p {
     font-size: 4vh;

@@ -20,12 +20,12 @@ function navigate(n){
 			{
 				rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
-				// setTimeout(function(){
-				// rules.style.display = "none";
-				// contacts.style.display = "none";
-				// }, 400);
 				setTimeout(function(){
-				// home.style.display = "flex";
+				rules.style.display = "none";
+				contacts.style.display = "none";
+				}, 400);
+				setTimeout(function(){
+				home.style.display = "flex";
 				home.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 0;
@@ -35,12 +35,12 @@ function navigate(n){
 			{
 				home.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
-				// setTimeout(function(){
-				// home.style.display = "none";
-				// contacts.style.display = "none";
-				// }, 400);
 				setTimeout(function(){
-				// rules.style.display = "block";
+				home.style.display = "none";
+				contacts.style.display = "none";
+				}, 400);
+				setTimeout(function(){
+				rules.style.display = "block";
 				rules.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 1;
@@ -50,12 +50,12 @@ function navigate(n){
 			{
 				home.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
-				// setTimeout(function(){
-				// home.style.display = "none";
-				// rules.style.display = "none";
-				// }, 400);
 				setTimeout(function(){
-				// contacts.style.display = "block";
+				home.style.display = "none";
+				rules.style.display = "none";
+				}, 400);
+				setTimeout(function(){
+				contacts.style.display = "block";
 				contacts.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 2;
@@ -279,12 +279,12 @@ function viewProblem(){
 }
 function goHome(){
 	var probElem = document.getElementsByClassName("prob")[0];
-	probElem.style.animation = "closeProb 0.5s cubic-bezier(.03,.44,.46,.85) forwards";
+	probElem.style.animation = "closeProb 0.5s ease-in forwards";
 	// var circle = document.getElementsByClassName("circle")[0];
 	// circle.style.display = "block";
-	setTimeout(function(){
+	// setTimeout(function(){
 		// probElem.style.display = "none";
-	}, 500);
+	// }, 500);
 }
 
 var hamCheck = 1;
