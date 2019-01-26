@@ -3,6 +3,9 @@ html,body{
     padding: 0;
     overflow: hidden;
 }
+::-webkit-scrollbar { 
+    display: none; 
+}
 .wraper{
     height: 100vh;
     width: 100vw;
@@ -11,6 +14,7 @@ html,body{
     display: flex;
     flex-direction: column;
     z-index: 5;
+    position: relative;
 }
 .nav{
     height: 10vh;
@@ -23,8 +27,9 @@ html,body{
     width: 200px;
     height: 37px;
     background: url("svg/apogeelogo.svg");
-    background-size: 100% 100%;
+    background-size: cover;
     margin: 5vh;
+    z-index: 10;
 }
 .links{
     margin: 5vh 2vw;
@@ -54,6 +59,7 @@ html,body{
     background-size: cover;
     position: absolute;
     top: 0vh;
+    display: block;
     right: -24vw;
     transform-origin: 100% 65%;
     /* animation: spin 120s infinite linear; */
@@ -222,7 +228,7 @@ h5 {
     top: 0;
     left: 0;
     z-index: 40;
-    display: none;
+    transform: translateX(100vw);
     overflow: hidden;
 }
 .hamburger{
@@ -361,7 +367,7 @@ h5 {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 50;
+        z-index: 10;
     }
     .register{
         width: 90vw;
@@ -465,13 +471,14 @@ h5 {
 
 .probWraper{
     background: url("svg/ProblemStatements1.svg");
-    background-size: 100% 100%;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     display: flex;
     z-index: 5;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 .half1{
     width: 50vw;
@@ -664,9 +671,6 @@ h5 {
 
 
 @media all and (max-width:700px){
-    .probWraper {
-        background-size: 200% 100%;
-    }
     .content{
         position: relative;
         height: 80vh;

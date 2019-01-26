@@ -271,15 +271,19 @@ var problem =
 
 function viewProblem(){
 	var probElem = document.getElementsByClassName("prob")[0];
-	probElem.style.display = "block";
+	// probElem.style.display = "block";
+	// var circle = document.getElementsByClassName("circle")[0];
+	// circle.style.display = "none";
 	probElem.style.animation = "openProb 0.5s ease 1 forwards";
 	probLoad();
 }
 function goHome(){
 	var probElem = document.getElementsByClassName("prob")[0];
 	probElem.style.animation = "closeProb 0.5s ease 1 forwards";
+	// var circle = document.getElementsByClassName("circle")[0];
+	// circle.style.display = "block";
 	setTimeout(function(){
-		probElem.style.display = "none";
+		// probElem.style.display = "none";
 	}, 500);
 }
 
