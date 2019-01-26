@@ -649,6 +649,9 @@ h5 {
     .heading1 h1, .heading2 h1 {
         font-size: 5rem;
     }
+    .links{
+        font-size: 1.2em;
+    }
 }
 
 
@@ -659,6 +662,9 @@ h5 {
     }
     .main {
         width: 500px;
+    }
+    .links{
+        font-size: 1.1em;
     }
 }
 
@@ -951,7 +957,7 @@ h5 {
         height: 100vh;
         background-color: #63ddc9;
         transform: translateX(-100vw);
-        transition: 0.5s cubic-bezier(.03,.44,.46,.85);
+        transition: 0.5s cubic-bezier(.12,.57,.78,.34);
     }
     .nav-links{
         text-decoration: none;
@@ -987,7 +993,6 @@ h5 {
     .hamburger{
         transform: scale(0.7);
         margin: 0;
-        margin-top: -3vh;
     }
     .home h1{
         font-size: 6vw;

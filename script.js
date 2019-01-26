@@ -19,8 +19,12 @@ function navigate(n){
 			case 0:
 			{
 				probcheck = 0;
-				rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
-				contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				if(c == 1){
+					rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				if(c == 2){
+					contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
 				// setTimeout(function(){
 				// rules.style.display = "none";
 				// contacts.style.display = "none";
@@ -35,8 +39,12 @@ function navigate(n){
 			case 1:
 			{
 				probcheck = 0;
+				if(c == 0){
 				home.style.animation = "closeRegContainer 0.5s ease 1 forwards";
-				contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				if(c == 2){
+					contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
 				// setTimeout(function(){
 				// home.style.display = "none";
 				// contacts.style.display = "none";
@@ -51,8 +59,12 @@ function navigate(n){
 			case 2:
 			{
 				probcheck = 0;
-				home.style.animation = "closeRegContainer 0.5s ease 1 forwards";
-				rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				if(c == 1){
+					rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				if(c == 0){
+					home.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
 				// setTimeout(function(){
 				// home.style.display = "none";
 				// rules.style.display = "none";
