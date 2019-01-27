@@ -296,6 +296,14 @@ function viewProblem(){
 	var home = document.getElementsByClassName("home")[0];
 	var rules = document.getElementsByClassName("rules")[0];
 	var contacts = document.getElementsByClassName("contacts")[0];
+	// var logo = document.getElementsByClassName('logo')[0];
+	// logo.style.display = "none";
+	// probElem.style.display = "block";
+	// var circle = document.getElementsByClassName("circle")[0];
+	// circle.style.display = "none";
+	probElem.style.animation = "openProb 0.5s cubic-bezier(.09,.68,.32,.89) forwards";
+	probLoad();
+	setTimeout(function(){
 	if(c == 1){
 		rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 	}
@@ -305,13 +313,7 @@ function viewProblem(){
 	if(c == 2){
 		contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 	}
-	// var logo = document.getElementsByClassName('logo')[0];
-	// logo.style.display = "none";
-	// probElem.style.display = "block";
-	// var circle = document.getElementsByClassName("circle")[0];
-	// circle.style.display = "none";
-	probElem.style.animation = "openProb 0.5s cubic-bezier(.03,.44,.46,.85) forwards";
-	probLoad();
+	},100)
 }
 function goHome(){
 	var probElem = document.getElementsByClassName("prob")[0];
@@ -333,9 +335,9 @@ function goHome(){
 	probcheck = 0;
 	// var circle = document.getElementsByClassName("circle")[0];
 	// circle.style.display = "block";
-	setTimeout(function(){
-		// probElem.style.display = "none";
-	}, 500);
+	// setTimeout(function(){
+	// 	probElem.style.display = "none";
+	// }, 500);
 }
 
 var hamCheck = 1;

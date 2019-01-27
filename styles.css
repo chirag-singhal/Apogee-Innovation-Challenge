@@ -57,6 +57,7 @@ html,body{
 .links :nth-child(5){
     background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
     color: white;
+    display: none;
     border-radius: 20px / 17px;
     margin-right: 10vw;
     padding: 7px 15px;
@@ -113,14 +114,14 @@ html,body{
     border-radius: 50px / 45px;
     cursor: pointer;
     font-weight: bold;
-    /* box-shadow: rgba(109,239,222,0.4) 0 0 4px 4px; */
+    /* box-shadow: rgba(34, 255, 225, 0.3) 0 0 14px 6px; */
 }
 #regist{
     display: none;
     cursor: pointer;
     text-align: center;
     font-weight: bold;
-    /* box-shadow: rgba(109,239,222,0.9) 0 0 4px 4px; */
+    /* box-shadow: rgba(34, 255, 225, 0.3)) 0 0 14px 6px; */
 }
 #viewprob a{
     text-decoration: none;
@@ -374,7 +375,7 @@ h5 {
         border-radius: 50px / 45px;
     }
     #regist{
-        display: block;
+        display: none;
         width: 40vw;
         margin-bottom: 0;
         background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
@@ -423,7 +424,7 @@ h5 {
         height: 100vh;
         background-color: #63ddc9;
         transform: translateX(-100vw);
-        transition: 0.5s cubic-bezier(.06,.54,.26,.9);
+        transition: 0.4s cubic-bezier(.06,.54,.26,.9);
     }
     .nav-links{
         text-decoration: none;
@@ -965,7 +966,7 @@ h5 {
         border-radius: 50px / 45px;
     }
     #regist{
-        display: block;
+        display: none;
         width: 40vw;
         margin-bottom: 0;
         background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
