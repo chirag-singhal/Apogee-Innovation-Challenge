@@ -597,7 +597,8 @@ h5 {
     justify-content: center;
 }
 .main{
-    width: 600px;
+    width: 500px;
+    height: 500px;
     max-height: 500px;
     margin: 0;
     padding: 0;
@@ -678,14 +679,15 @@ h5 {
         margin-top: 5vh;
     }
     .main {
-        width: 500px;
+        width: 450px;
+        height: 450px;
     }
     .content p{
         font-size: 1.2rem;
     }
     .main{
-        max-height: 40vh;
-        max-width: 30vw;;
+        height: 350px;
+        width: 350px;
     }
 }
 
@@ -696,7 +698,8 @@ h5 {
         margin-top: 5vh;
     }
     .main {
-        width: 400px;
+        width: 350px;
+        height: 350px;
     }
     .content p, .content h6{
         font-size: 1.5rem;
@@ -708,9 +711,6 @@ h5 {
     .heading1 h1, .heading2 h1 {
         font-size: 3rem;
         margin-top: 4vh;
-    }
-    .main {
-        width: 350px;
     }
     .content p{
         font-size: 1.1rem;
@@ -732,6 +732,7 @@ h5 {
     }
     .main {
         width: 270px;
+        height: 270px;
     }
     .content p{
         font-size: 1rem;
@@ -844,8 +845,8 @@ h5 {
         font-size: 10vw;
     }
     .main {
-        height: 100px;
-        max-width: 60vw;
+        height: 130px;
+        width: 130px;
         margin: 0;
         padding: 0;
     }
@@ -948,7 +949,8 @@ h5 {
         text-align: center;
     }
     .main{
-        max-height: 50vh;
+        height: 50vh;
+        width: 50vh;
     }
     .backButton{
         display: none;
@@ -1081,9 +1083,6 @@ h5 {
     }
     .prob{
         z-index: 50;
-    }
-    .main{
-        max-width: 30vw;
     }
     .navProb{
         justify-content: flex-end;

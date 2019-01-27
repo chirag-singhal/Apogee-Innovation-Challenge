@@ -287,7 +287,7 @@ var problem =
     "GE Healthcare is an American multinational conglomerate incorporated in New York and headquartered in Chicago, Illinois. As of 2017, the company is a manufacturer and distributor of diagnostic imaging agents and radiopharmaceuticals for imaging modalities that are used in medical imaging procedures. The company offers dyes that are used in magnetic-resonance-imaging procedures. GE Healthcare also manufactures medical diagnostic equipment including CT image machines.",
     "Netskope, Inc. is an American software company founded in 2012 that helps companies protect data and protect against threats in cloud applications, cloud infrastructure, and the web. Netskope is in a category of technology classified by Gartner as cloud access security brokers. Netskope is recognized as a leader in the Gartner Magic Quadrant for Cloud Access Security Brokers."
     ],
-    img: ["svg/reflexis.png", "svg/zulip.jpeg", "svg/antstudio.png", "svg/GE_Healthcare.jpg", "svg/netskope.png"]
+    img: ["svg/reflexis.jpg", "svg/zulip.jpg", "svg/antstudio.jpg", "svg/GE_Healthcare.jpg", "svg/netskope.jpg"]
 }
 var probcheck = 0;
 function viewProblem(){
@@ -301,7 +301,7 @@ function viewProblem(){
 	// probElem.style.display = "block";
 	// var circle = document.getElementsByClassName("circle")[0];
 	// circle.style.display = "none";
-	probElem.style.animation = "openProb 0.5s cubic-bezier(.09,.68,.32,.89) forwards";
+	probElem.style.animation = "openProb 0.5s cubic-bezier(.05,.75,.19,.93) forwards";
 	probLoad();
 	setTimeout(function(){
 	if(c == 1){
