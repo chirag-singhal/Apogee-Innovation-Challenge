@@ -112,13 +112,14 @@ html,body{
     border-radius: 50px / 45px;
     cursor: pointer;
     font-weight: bold;
+    /* box-shadow: rgba(109,239,222,0.4) 0 0 4px 4px; */
 }
 #regist{
     display: none;
     cursor: pointer;
     text-align: center;
     font-weight: bold;
-    box-shadow: 0 0 5px rgba(108,241,228,0.4);
+    /* box-shadow: rgba(109,239,222,0.9) 0 0 4px 4px; */
 }
 #viewprob a{
     text-decoration: none;
@@ -421,7 +422,7 @@ h5 {
         height: 100vh;
         background-color: #63ddc9;
         transform: translateX(-100vw);
-        transition: 0.5s cubic-bezier(.07,.66,.4,.93);
+        transition: 0.5s cubic-bezier(.06,.54,.26,.9);
     }
     .nav-links{
         text-decoration: none;

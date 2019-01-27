@@ -173,7 +173,7 @@ function prevProblem() {
 	}
 	else
 	{
-		prob = 7;
+		prob = 4;
 		probChange();
 	}
 }
@@ -293,6 +293,18 @@ var probcheck = 0;
 function viewProblem(){
 	probcheck = 1;
 	var probElem = document.getElementsByClassName("prob")[0];
+	var home = document.getElementsByClassName("home")[0];
+	var rules = document.getElementsByClassName("rules")[0];
+	var contacts = document.getElementsByClassName("contacts")[0];
+	if(c == 1){
+		rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+	}
+	if(c == 0){
+		home.style.animation = "closeRegContainer 0.2s ease 1 forwards";
+	}
+	if(c == 2){
+		contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+	}
 	// var logo = document.getElementsByClassName('logo')[0];
 	// logo.style.display = "none";
 	// probElem.style.display = "block";
