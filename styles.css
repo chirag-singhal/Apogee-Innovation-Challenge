@@ -54,7 +54,7 @@ html,body{
     color: #565656;
     padding: 5px 2vw;
 }
-.links :nth-child(5){
+.links :nth-child(6){
     background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
     color: white;
     display: none;
@@ -131,7 +131,7 @@ html,body{
     text-decoration: none;
     color: white;
 }
-.rules h3 {
+.rules h3, .about h3{
     font-size: 7vh;
     text-align: center;
     font-family: Bahnschrift;
@@ -152,12 +152,16 @@ html,body{
 .container {
     width: 100vw;
 }
-.rules {
+.rules, .about{
     opacity: 0;
     width: 70vw;
     margin: 0 15vw;
 }
-.rules > p {
+.about{
+    position: absolute;
+    top: 10vh;
+}
+.rules > p, .about p {
     font-size: 3.5vh;
     font-family: Bahnschrift;
     color: #565656;
@@ -271,16 +275,12 @@ h5 {
     margin: 20px 50px;
     cursor: pointer;
 }
-
-
 .cross {
     width: 30px;
     height: 30px;
     cursor: pointer;
     display: none;
 }
-
-
 @media all and (max-width: 1000px){
     .problem {
         font-size: 1.1rem;
@@ -299,7 +299,7 @@ h5 {
     h3 {
         font-size: 7vh;
     }
-    .rules > p {
+    .rules > p, .about p {
         font-size: 2.5vh;
         padding: 0;
     }
@@ -435,7 +435,7 @@ h5 {
         color: #fff;
         padding: 3vh;
     }
-    .links :nth-child(5){
+    .links :nth-child(6){
         display: none;
     }
     .links :nth-child(2){
@@ -447,11 +447,11 @@ h5 {
         top: 25px;
         left: 25px;
     }
-    .rules h3{
+    .rules h3, .about h3{
         font-size: 10vw;
         margin: 2vh;
     }
-    .rules p{
+    .rules p, .about p{
         margin-top: 5vh;
         padding: 0 3vw;
     }
@@ -837,7 +837,7 @@ h5 {
         width: 90vw;
         margin: 0 5vw;
     }
-    .rules{
+    .rules, .about{
         width: 90vw;
         margin: 0 5vw;
     }
@@ -1029,7 +1029,7 @@ h5 {
         color: #fff;
         padding: 3vh;
     }
-    .links :nth-child(5){
+    .links :nth-child(6){
         display: none;
     }
     .links :nth-child(2){
