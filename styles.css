@@ -860,6 +860,9 @@ h5 {
     }
     .links{
         font-size: 1.6em;
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(.06,.54,.26,.9);
+
     }
 }
 @keyframes openReg {
@@ -1014,7 +1017,7 @@ h5 {
         background-color: #63ddc9;
         transform: translateX(-100vw);
         transition: 0.5s;
-        transition-timing-function: cubic-bezier(.1,.82,.79,1.32);
+        transition-timing-function: cubic-bezier(.06,.54,.26,.9);
     }
     .nav-links{
         text-decoration: none;

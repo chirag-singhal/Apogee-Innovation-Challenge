@@ -349,7 +349,8 @@ function openMenu(){
 	hamCheck = 0;
 }
 function closeMenu(){
-  	var menu = document.getElementsByClassName("links")[0];
+	  var menu = document.getElementsByClassName("links")[0];
+	  menu.style.transition = "0.5s cubic-beizer(.6,.15,.89,.53)";
 	menu.style.transform = "translateX(-100vw)";
 	setTimeout(function(){
 		document.getElementsByClassName("hamburger")[0].style.display = "block";
