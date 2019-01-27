@@ -18,14 +18,19 @@ function navigate(n){
 		switch(n){
 			case 0:
 			{
-				rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
-				contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				probcheck = 0;
+				if(c == 1){
+					rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				if(c == 2){
+					contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				// setTimeout(function(){
+				// rules.style.display = "none";
+				// contacts.style.display = "none";
+				// }, 400);
 				setTimeout(function(){
-				rules.style.display = "none";
-				contacts.style.display = "none";
-				}, 400);
-				setTimeout(function(){
-				home.style.display = "flex";
+				// home.style.display = "flex";
 				home.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 0;
@@ -33,14 +38,19 @@ function navigate(n){
 			}
 			case 1:
 			{
-				home.style.animation = "closeRegContainer 0.5s ease 1 forwards";
-				contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				probcheck = 0;
+				if(c == 0){
+				home.style.animation = "closeRegContainer 0.2s ease 1 forwards";
+				}
+				if(c == 2){
+					contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				// setTimeout(function(){
+				// home.style.display = "none";
+				// contacts.style.display = "none";
+				// }, 400);
 				setTimeout(function(){
-				home.style.display = "none";
-				contacts.style.display = "none";
-				}, 400);
-				setTimeout(function(){
-				rules.style.display = "block";
+				// rules.style.display = "block";
 				rules.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 1;
@@ -48,14 +58,19 @@ function navigate(n){
 			}
 			case 2:
 			{
-				home.style.animation = "closeRegContainer 0.5s ease 1 forwards";
-				rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				probcheck = 0;
+				if(c == 1){
+					rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				if(c == 0){
+					home.style.animation = "closeRegContainer 0.2s ease 1 forwards";
+				}
+				// setTimeout(function(){
+				// home.style.display = "none";
+				// rules.style.display = "none";
+				// }, 400);
 				setTimeout(function(){
-				home.style.display = "none";
-				rules.style.display = "none";
-				}, 400);
-				setTimeout(function(){
-				contacts.style.display = "block";
+				// contacts.style.display = "block";
 				contacts.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 2;
@@ -274,9 +289,12 @@ var problem =
     ],
     img: ["svg/reflexis.png", "svg/zulip.jpeg", "svg/antstudio.png", "svg/GE_Healthcare.jpg", "svg/netskope.png"]
 }
-
+var probcheck = 0;
 function viewProblem(){
+	probcheck = 1;
 	var probElem = document.getElementsByClassName("prob")[0];
+	// var logo = document.getElementsByClassName('logo')[0];
+	// logo.style.display = "none";
 	// probElem.style.display = "block";
 	// var circle = document.getElementsByClassName("circle")[0];
 	// circle.style.display = "none";
@@ -285,12 +303,15 @@ function viewProblem(){
 }
 function goHome(){
 	var probElem = document.getElementsByClassName("prob")[0];
-	probElem.style.animation = "closeProb 0.5s ease-in forwards";
+	if(probcheck == 1){
+		probElem.style.animation = "closeProb 0.5s ease-in forwards";
+	}
+	probcheck = 0;
 	// var circle = document.getElementsByClassName("circle")[0];
 	// circle.style.display = "block";
-	// setTimeout(function(){
+	setTimeout(function(){
 		// probElem.style.display = "none";
-	// }, 500);
+	}, 500);
 }
 
 var hamCheck = 1;
