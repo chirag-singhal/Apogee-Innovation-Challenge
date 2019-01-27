@@ -20,6 +20,9 @@ html,body{
     z-index: 5;
     position: relative;
 }
+.register p a{
+    color: #2dc9af;
+}
 .nav{
     height: 10vh;
     width: 100vw;
@@ -115,6 +118,7 @@ html,body{
     cursor: pointer;
     text-align: center;
     font-weight: bold;
+    box-shadow: 0 0 5px rgba(108,241,228,0.4);
 }
 #viewprob a{
     text-decoration: none;
@@ -321,7 +325,7 @@ h5 {
         font-size: 6vh;
     }
     .rules > p {
-        font-size: 2vh;
+        font-size: 2.5vh;
         padding: 0;
     }
     .contacts > p, .content h6 {
@@ -400,9 +404,9 @@ h5 {
         z-index: 10;
     }
     .register{
-        width: 90vw;
-        margin: 8vh 1vw;
-        padding: 3vh 4vw;
+        width: 85vw;
+        margin: 8vh 4.5vw;
+        padding: 3vh 3vw;
     }
     .links{
         position: absolute;
@@ -413,15 +417,17 @@ h5 {
         font-size: 2rem;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
+        width: 89vw;
         height: 100vh;
         background-color: #63ddc9;
         transform: translateX(-100vw);
-        transition: 0.5s cubic-bezier(.06,.77,.7,1.23);
+        transition: 0.5s cubic-bezier(.07,.66,.4,.93);
     }
     .nav-links{
         text-decoration: none;
         height: 25px;
+        width: 100%;
+        text-align: center;
         line-height: 25px;
         color: #fff;
         padding: 3vh;
@@ -439,11 +445,12 @@ h5 {
         left: 25px;
     }
     .rules h3{
-        font-size: 6vw;
+        font-size: 10vw;
         margin: 2vh;
     }
     .rules p{
         margin-top: 5vh;
+        padding: 0 3vw;
     }
 }
 
@@ -708,7 +715,7 @@ h5 {
 }
 
 
-@media all and (max-width: 700px){
+@media all and (max-width: 700px) and (orientation : portrait){
     .probWraper{
         background-size: 200vw 100vh;
     }
@@ -800,6 +807,10 @@ h5 {
         cursor: pointer;
     }
     .contacts{
+        width: 90vw;
+        margin: 0 5vw;
+    }
+    .rules{
         width: 90vw;
         margin: 0 5vw;
     }
@@ -1054,5 +1065,13 @@ h5 {
     .register{
         width: 50vw;
         margin-left: 21vw;
+    }
+    .content p{
+        height: 40vh;
+        font-size: 4vh;
+        margin-top: 2vh;
+    }
+    .content h6{
+        font-size: 1.2em;
     }
 }

@@ -329,5 +329,5 @@ function closeMenu(){
 	menu.style.transform = "translateX(-100vw)";
 	setTimeout(function(){
 		document.getElementsByClassName("hamburger")[0].style.display = "block";
-	}, 480);
+	}, 150);
 }
