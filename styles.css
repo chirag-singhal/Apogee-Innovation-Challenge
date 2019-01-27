@@ -94,6 +94,9 @@ html,body{
     font-weight: 500;
     margin-left: 4vw;
 }
+.rules p a{
+    color: #2dc9af;
+}
 .problem{
     position: absolute;
     bottom: 10vh;
@@ -162,7 +165,7 @@ html,body{
     top: 10vh;
 }
 .rules > p, .about p {
-    font-size: 3.5vh;
+    font-size: 3vh;
     font-family: Bahnschrift;
     color: #565656;
 }
@@ -179,7 +182,7 @@ html,body{
     cursor: pointer;
 }
 .contacts > p, .content h6 {
-    font-size: 4vh;
+    font-size: 3.4vh;
     font-family: Bahnschrift;
     color: #565656;
     text-align: center;
@@ -304,7 +307,7 @@ h5 {
         padding: 0;
     }
     .contacts > p, .content h6 {
-        font-size: 3vh;
+        font-size: 2.8vh;
     }
 }
 
@@ -327,12 +330,12 @@ h5 {
     h3 {
         font-size: 6vh;
     }
-    .rules > p {
-        font-size: 2.5vh;
+    .rules > p, .about p {
+        font-size: 2vh;
         padding: 0;
     }
     .contacts > p, .content h6 {
-        font-size: 2.5vh;
+        font-size: 2.3vh;
     }
 }
 
@@ -634,7 +637,7 @@ h5 {
     position: absolute;
     top: 50vh;
     transform: translateY(-50%);
-    left: 1.5vw;
+    left: 0.5vw;
     z-index: 50;
     cursor: pointer;
 }
@@ -663,6 +666,12 @@ h5 {
     .heading1 h1, .heading2 h1 {
         font-size: 5rem;
     }
+    .rules p, .about p{
+        font-size: 2.8vh;
+    }
+    .contacts p{
+        font-size: 3.2vh;
+    }
     .content p{
         font-size: 1.3rem;
     }
@@ -684,6 +693,12 @@ h5 {
     }
     .content p{
         font-size: 1.2rem;
+    }
+    .rules p, .about p{
+        font-size: 2.6vh;
+    }
+    .contacts p{
+        font-size: 3vh;
     }
     .main{
         height: 350px;
@@ -743,6 +758,9 @@ h5 {
 @media all and (max-width: 700px) and (orientation : portrait){
     .probWraper{
         background-size: cover;
+    }
+    .problem{
+        bottom: 0vh;
     }
     .content{
         position: relative;
@@ -845,8 +863,9 @@ h5 {
         font-size: 10vw;
     }
     .main {
-        height: 130px;
-        width: 130px;
+        height: 110px;
+        width: 180px;
+        max-width: 60vw;
         margin: 0;
         padding: 0;
     }
@@ -864,7 +883,12 @@ h5 {
         font-size: 1.6em;
         transition: 0.5s;
         transition-timing-function: cubic-bezier(.06,.54,.26,.9);
-
+    }
+    .rules p, .about p{
+        font-size: 2vh;
+    }
+    .contacts p{
+        font-size: 2.4vh;
     }
 }
 @keyframes openReg {

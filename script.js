@@ -225,6 +225,7 @@ function probLoad(){
 	var head2 = document.getElementsByClassName("heading2")[0];
 	var content = document.getElementsByClassName("content")[0];
 	var img = document.getElementsByClassName("main")[0];
+	var download = document.getElementById('download_problem');
 
 
 	
@@ -253,6 +254,7 @@ function probLoad(){
 
 
 	img.src = problem.img[prob];
+	download.setAttribute('href', problem.source[prob]);
 
 }
 function probChange(){
@@ -260,7 +262,8 @@ function probChange(){
 	var head2 = document.getElementsByClassName("heading2")[0];
 	var content = document.getElementsByClassName("content")[0];
 	var img = document.getElementsByClassName("main")[0];
-
+	var download = document.getElementById('download_problem');
+	var logo = document.getElementsByClassName('main')[0];
 
 	
 	head1.style.animation = "closeRegContainer 0.5s ease 1 forwards";
@@ -282,9 +285,7 @@ function probChange(){
 		head2.innerHTML = "";
 		head2.appendChild(h2);
 		head2.style.animation = "openRegContainer 0.5s ease 1 forwards";
-	}, 500);	
-
-
+	}, 500);
 	content.firstElementChild.style.animation = "closeReg 0.5s ease 1 forwards";
 	content.lastElementChild.style.animation = "closeReg 0.5s ease 1 forwards";
 	setTimeout(function(){
@@ -301,9 +302,15 @@ function probChange(){
 	content.lastElementChild.style.animation = "openReg 0.5s ease 1 forwards";
 	}, 500);	
 
-
+	download.setAttribute('href', problem.source[prob]);
 	img.style.animation = "closeProb 0.5s ease 1 forwards";
-	setTimeout(function(){
+	setTimeout(function(){	
+		if(prob == 1){
+			logo.style.width = "110px";
+		}
+		else{
+			logo.style.width = "180px";
+		}
 		img.src = problem.img[prob];
 	img.style.animation = "openProb 0.5s ease 1 forwards";
 	}, 500);
@@ -320,7 +327,8 @@ var problem =
     "GE Healthcare is an American multinational conglomerate incorporated in New York and headquartered in Chicago, Illinois. As of 2017, the company is a manufacturer and distributor of diagnostic imaging agents and radiopharmaceuticals for imaging modalities that are used in medical imaging procedures. The company offers dyes that are used in magnetic-resonance-imaging procedures. GE Healthcare also manufactures medical diagnostic equipment including CT image machines.",
     "Netskope, Inc. is an American software company founded in 2012 that helps companies protect data and protect against threats in cloud applications, cloud infrastructure, and the web. Netskope is in a category of technology classified by Gartner as cloud access security brokers. Netskope is recognized as a leader in the Gartner Magic Quadrant for Cloud Access Security Brokers."
     ],
-    img: ["svg/reflexis.jpg", "svg/zulip.jpg", "svg/antstudio.jpg", "svg/GE_Healthcare.jpg", "svg/netskope.jpg"]
+	img: ["LOGOS/refl.png", "LOGOS/zulip.png", "LOGOS/ants.jpg", "LOGOS/ge_healthcare.png", "LOGOS/NetskopeLogo.jpg"],
+	source: ["ProblemStatements/Reflexis.pdf", "ProblemStatements/ZULIP.pdf", "ProblemStatements/ANTstudio.pdf", "ProblemStatements/GEhealth.pdf", "ProblemStatements/NETSKOPE.pdf"]
 }
 var probcheck = 0;
 function viewProblem(){
