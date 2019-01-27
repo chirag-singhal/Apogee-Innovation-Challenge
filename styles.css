@@ -788,10 +788,12 @@ h5 {
         left: 94vw;
         width: 18px;
         height: 30px;
+        top: 60vh;
     }
     .leftarrow{
         width: 18px;
         height: 30px;
+        top: 60vh;
     }
     .navProb{
         width: 100vw;
