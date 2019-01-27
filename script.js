@@ -315,8 +315,20 @@ function viewProblem(){
 }
 function goHome(){
 	var probElem = document.getElementsByClassName("prob")[0];
+	var home = document.getElementsByClassName("home")[0];
+	var rules = document.getElementsByClassName("rules")[0];
+	var contacts = document.getElementsByClassName("contacts")[0];
 	if(probcheck == 1){
 		probElem.style.animation = "closeProb 0.5s ease-in forwards";
+	}
+	if(c == 1){
+		rules.style.animation = "openRegContainer 0.5s ease 1 forwards";
+	}
+	if(c == 0){
+		home.style.animation = "openRegContainer 0.2s ease 1 forwards";
+	}
+	if(c == 2){
+		contacts.style.animation = "openRegContainer 0.5s ease 1 forwards";
 	}
 	probcheck = 0;
 	// var circle = document.getElementsByClassName("circle")[0];

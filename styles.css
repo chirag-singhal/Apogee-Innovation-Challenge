@@ -146,7 +146,7 @@ html,body{
     color: #2dc9af;
     font-weight: 500;
     margin: 7vh;
-    margin-top: 3vh;
+    margin-top: 5vh;
 } 
 .container {
     width: 100vw;
@@ -178,7 +178,7 @@ html,body{
     font-family: Bahnschrift;
     color: #565656;
     text-align: center;
-    margin-top: 4vh;
+    margin-top: -2vh;
 }
 .regContainer {
     display: none;
@@ -569,7 +569,7 @@ h5 {
 }
 .content p, .content h6 {
     color: #2e394c;
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 0 8vw;
     margin: 0;
     font-family: Bahnschrift;
@@ -661,6 +661,13 @@ h5 {
     .heading1 h1, .heading2 h1 {
         font-size: 5rem;
     }
+    .content p{
+        font-size: 1.3rem;
+    }
+    .main{
+        max-height: 40vh;
+        max-width: 30vw;;
+    }
 }
 
 
@@ -671,6 +678,13 @@ h5 {
     }
     .main {
         width: 500px;
+    }
+    .content p{
+        font-size: 1.2rem;
+    }
+    .main{
+        max-height: 40vh;
+        max-width: 30vw;;
     }
 }
 
@@ -698,7 +712,14 @@ h5 {
         width: 350px;
     }
     .content p{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+    }
+    .download{
+        bottom: 4vh;
+    }
+    .main{
+        max-height: 40vh;
+        max-width: 30vw;;
     }
 }
 
@@ -719,7 +740,7 @@ h5 {
 
 @media all and (max-width: 700px) and (orientation : portrait){
     .probWraper{
-        background-size: 200vw 100vh;
+        background-size: cover;
     }
     .content{
         position: relative;
@@ -910,7 +931,7 @@ h5 {
         z-index: 45;
     }
     .download{
-        bottom: 2vh;
+        bottom: 0vh;
     }
     .problem{
         bottom: 0vh;
@@ -1072,7 +1093,7 @@ h5 {
     }
     .content p{
         height: 40vh;
-        font-size: 4vh;
+        font-size: 1.1em;
         margin-top: 2vh;
     }
     .content h6{
