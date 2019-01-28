@@ -46,6 +46,7 @@ html,body{
     display: flex;
     font-weight: 550;
     flex-wrap: nowrap;
+    z-index: 60;
 }
 .nav-links{
     text-decoration: none;
@@ -600,9 +601,8 @@ h5 {
     justify-content: center;
 }
 .main{
-    width: 500px;
-    height: 500px;
-    max-height: 500px;
+    width: 480px;
+    height: 480px;
     margin: 0;
     padding: 0;
 }
@@ -688,7 +688,7 @@ h5 {
         margin-top: 5vh;
     }
     .main {
-        width: 450px;
+        width: auto;
         height: 450px;
     }
     .content p{
@@ -702,7 +702,7 @@ h5 {
     }
     .main{
         height: 350px;
-        width: 350px;
+        width: auto;
     }
 }
 
@@ -713,7 +713,7 @@ h5 {
         margin-top: 5vh;
     }
     .main {
-        width: 350px;
+        width: auto;
         height: 350px;
     }
     .content p, .content h6{
@@ -746,7 +746,7 @@ h5 {
         margin-top: 4vh;
     }
     .main {
-        width: 270px;
+        width: auto;
         height: 270px;
     }
     .content p{
@@ -974,7 +974,7 @@ h5 {
     }
     .main{
         height: 50vh;
-        width: 50vh;
+        width: auto;
     }
     .backButton{
         display: none;
@@ -1099,7 +1099,7 @@ h5 {
         height: 100vh;
     }
     .links :nth-child(2){
-        margin-top: 25vh;
+        margin-top: 15vh;
     }
     .leftarrow,.rightarrow{
         height: 22px;
@@ -1117,10 +1117,13 @@ h5 {
     }
     .content p{
         height: 40vh;
-        font-size: 1.1em;
+        font-size: 0.8em;
         margin-top: 2vh;
     }
     .content h6{
         font-size: 1.2em;
+    }
+    .rules p{
+        font-size: 0.5em;
     }
 }
