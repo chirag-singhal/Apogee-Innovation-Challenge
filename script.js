@@ -33,12 +33,14 @@ function navigate(n){
 				if(c == 4){
 					developers.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				}
-				// setTimeout(function(){
-				// rules.style.display = "none";
-				// contacts.style.display = "none";
-				// }, 400);
 				setTimeout(function(){
-				// home.style.display = "flex";
+				rules.style.display = "none";
+				contacts.style.display = "none";
+				about.style.display = "none";
+				developers.style.display = "none";
+				}, 400);
+				setTimeout(function(){
+				home.style.display = "flex";
 				home.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 0;
@@ -59,12 +61,14 @@ function navigate(n){
 				if(c == 4){
 					developers.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				}
-				// setTimeout(function(){
-				// home.style.display = "none";
-				// contacts.style.display = "none";
-				// }, 400);
 				setTimeout(function(){
-				// rules.style.display = "block";
+				home.style.display = "none";
+				contacts.style.display = "none";
+				about.style.display = "none";
+				developers.style.display = "none";
+				}, 400);
+				setTimeout(function(){
+				rules.style.display = "block";
 				rules.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 1;
@@ -85,12 +89,14 @@ function navigate(n){
 				if(c == 4){
 					developers.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				}
-				// setTimeout(function(){
-				// home.style.display = "none";
-				// rules.style.display = "none";
-				// }, 400);
 				setTimeout(function(){
-				// contacts.style.display = "block";
+				home.style.display = "none";
+				rules.style.display = "none";
+				about.style.display = "none";
+				developers.style.display = "none";
+				}, 400);
+				setTimeout(function(){
+				contacts.style.display = "block";
 				contacts.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 2;
@@ -111,12 +117,14 @@ function navigate(n){
 				if(c == 4){
 					developers.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				}
-				// setTimeout(function(){
-				// home.style.display = "none";
-				// rules.style.display = "none";
-				// }, 400);
 				setTimeout(function(){
-				// contacts.style.display = "block";
+				home.style.display = "none";
+				rules.style.display = "none";
+				developers.style.display = "none";
+				contacts.style.display = "none";
+				}, 400);
+				setTimeout(function(){
+				about.style.display = "block";
 				about.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 3;
@@ -137,12 +145,14 @@ function navigate(n){
 				if(c == 3){
 					about.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				}
-				// setTimeout(function(){
-				// home.style.display = "none";
-				// rules.style.display = "none";
-				// }, 400);
 				setTimeout(function(){
-				// contacts.style.display = "block";
+				home.style.display = "none";
+				rules.style.display = "none";
+				about.style.display = "none";
+				contacts.style.display = "none";
+				}, 400);
+				setTimeout(function(){
+				developers.style.display = "block";
 				developers.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 4;
@@ -205,22 +215,23 @@ function removeMember(){
 }
 
 function openReg(){
-	var elem1 = document.getElementsByClassName("regContainer")[0];
-	var elem2 = document.getElementsByClassName("register")[0];
-	elem1.style.display = "block";
-	elem2.style.animation = "openReg 0.5s ease 1 forwards";
-	elem1.style.animation = "openRegContainer 0.5s ease 1 forwards";
+	window.open("https://docs.google.com/forms/d/e/1FAIpQLSeLyR0qzQt_MIIzw4v0o-_MFu6Tirx8tOC7QlUTWpX4HsI6aw/viewform?usp=sf_link")
+	// var elem1 = document.getElementsByClassName("regContainer")[0];
+	// var elem2 = document.getElementsByClassName("register")[0];
+	// elem1.style.display = "block";
+	// elem2.style.animation = "openReg 0.5s ease 1 forwards";
+	// elem1.style.animation = "openRegContainer 0.5s ease 1 forwards";
 }
 
-function closeReg(){
-	var elem1 = document.getElementsByClassName("regContainer")[0];
-	var elem2 = document.getElementsByClassName("register")[0];
-	elem2.style.animation = "closeReg 0.5s ease 1 forwards";
-	elem1.style.animation = "closeRegContainer 0.5s ease 1 forwards";
-	setTimeout(function(){
-		elem1.style.display = "none";
-	}, 1000);
-}
+// function closeReg(){
+// 	var elem1 = document.getElementsByClassName("regContainer")[0];
+// 	var elem2 = document.getElementsByClassName("register")[0];
+// 	elem2.style.animation = "closeReg 0.5s ease 1 forwards";
+// 	elem1.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+// 	setTimeout(function(){
+// 		elem1.style.display = "none";
+// 	}, 1000);
+// }
 
 var prob = 0;
 function nextProblem() {
@@ -358,7 +369,7 @@ var problem =
 {
     head1: ["REFLEXIS ", "ZU", "ANT S", "GE HEA", "NETS"],
     head2: [" SYSTEMS", "LIP", "TUDIO", "LTHCARE", "KOPE"],
-    rewards: ["Rs.50,000/- + Summer Internships", "Rs.40,000/-", "Rs.30,000/- + Summer Internships", "Summer Internships", "Rs.1,00,000/-"],
+    rewards: ["Rs.50,000/- + Summer Internships", "Rs.40,000/-", "Rs.30,000/- + Summer Internships", "Summer Internships", "Rs.1,80,000/-"],
     content: [
     "Reflexis is the leading provider of real-time store operations solutions having been selected by more than 250 global retailers to simplify store operations, optimize labor spend, and improve store execution. The Reflexis ONE real-time work platform helps retailers drive simplification for stores and improved line-of-sight for field management resulting in significant time savings, precise execution, and superior customer experience.",
     "Zulip, a GSoC company from past 3 years. Zulip deals with creating the perfect hybrid of online group chat and email threading model. A 100% open source software, Zulip works on latest technologies and thus has a high-quality code base.",

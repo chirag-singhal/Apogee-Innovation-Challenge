@@ -58,7 +58,6 @@ html,body{
 .links :nth-child(7){
     background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
     color: white;
-    display: none;
     border-radius: 20px / 17px;
     margin-right: 10vw;
     padding: 7px 15px;
@@ -145,6 +144,9 @@ html,body{
     margin: 7vh;
     margin-top: 3vh;
 }
+.rules a {
+    color: #2dc9af;
+}
 .contacts h3 {
     font-size: 7vh;
     text-align: center;
@@ -187,7 +189,7 @@ html,body{
     position: absolute;
     top: 10vh;
 }
-.rules > p, .about p, .developers p {
+.rules > ol > li, .about p, .developers p {
     font-size: 3vh;
     font-family: Bahnschrift;
     color: #565656;
@@ -318,6 +320,13 @@ h5 {
     border-radius: 50%;
     border: solid 10px #2dc9af;
 }
+@media all and (max-width: 1500px){
+    .rules > ol > li {
+        font-size: 2.5vh;
+        padding: 0;
+    }
+}
+
 @media all and (max-width: 1000px){
     .problem {
         font-size: 1.1rem;
@@ -336,7 +345,7 @@ h5 {
     h3 {
         font-size: 7vh;
     }
-    .rules > p, .about p {
+    .rules > ol > li, .about p {
         font-size: 2.5vh;
         padding: 0;
     }
@@ -368,7 +377,7 @@ h5 {
     h3 {
         font-size: 6vh;
     }
-    .rules > p, .about p {
+    .rules > ol > li, .about p {
         font-size: 2vh;
         padding: 0;
     }
@@ -421,7 +430,7 @@ h5 {
         border-radius: 50px / 45px;
     }
     #regist{
-        display: none;
+        display: inline;
         width: 40vw;
         margin-bottom: 0;
         background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
@@ -497,8 +506,10 @@ h5 {
         font-size: 10vw;
         margin: 2vh;
     }
-    .rules p, .about p{
+    .rules > ol {
         margin-top: 5vh;
+    }
+    .rules > ol > li, .about p{
         padding: 0 3vw;
     }
     .developers > h3 {
