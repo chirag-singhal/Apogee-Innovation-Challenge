@@ -507,10 +507,13 @@ h5 {
         margin: 2vh;
     }
     .rules > ol {
-        margin-top: 5vh;
+        margin-top: 1vh;
     }
     .rules > ol > li, .about p{
         padding: 0 3vw;
+    }
+    .rules > ol > li {
+        font-size: 1.75vh;
     }
     .developers > h3 {
         margin: 0;
