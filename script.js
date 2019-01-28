@@ -305,12 +305,12 @@ function probChange(){
 	download.setAttribute('href', problem.source[prob]);
 	img.style.animation = "closeProb 0.5s ease 1 forwards";
 	setTimeout(function(){	
-		if(prob == 1){
-			logo.style.width = "110px";
-		}
-		else{
-			logo.style.width = "180px";
-		}
+		// if(prob == 1){
+		// 	logo.style.width = "110px";
+		// }
+		// else{
+		// 	logo.style.width = "180px";
+		// }
 		img.src = problem.img[prob];
 	img.style.animation = "openProb 0.5s ease 1 forwards";
 	}, 500);
