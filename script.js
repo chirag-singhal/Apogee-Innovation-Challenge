@@ -16,6 +16,7 @@ function navigate(n){
 		var rules = document.getElementsByClassName("rules")[0];
 		var contacts = document.getElementsByClassName("contacts")[0];
 		var about = document.getElementsByClassName("about")[0];
+		var developers = document.getElementsByClassName("developers")[0];
 		switch(n){
 			case 0:
 			{
@@ -28,6 +29,9 @@ function navigate(n){
 				}
 				if(c == 3){
 					about.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				if(c == 4){
+					developers.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				}
 				// setTimeout(function(){
 				// rules.style.display = "none";
@@ -52,6 +56,9 @@ function navigate(n){
 				if(c == 3){
 					about.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				}
+				if(c == 4){
+					developers.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
 				// setTimeout(function(){
 				// home.style.display = "none";
 				// contacts.style.display = "none";
@@ -74,6 +81,9 @@ function navigate(n){
 				}
 				if(c == 3){
 					about.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				if(c == 4){
+					developers.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				}
 				// setTimeout(function(){
 				// home.style.display = "none";
@@ -98,6 +108,9 @@ function navigate(n){
 				if(c == 2){
 					contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
 				}
+				if(c == 4){
+					developers.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
 				// setTimeout(function(){
 				// home.style.display = "none";
 				// rules.style.display = "none";
@@ -107,6 +120,32 @@ function navigate(n){
 				about.style.animation = "openRegContainer 0.5s ease 1 forwards";
 				}, 500);
 				c = 3;
+				break;
+			}
+			case 4:
+			{
+				probcheck = 0;
+				if(c == 1){
+					rules.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				if(c == 0){
+					home.style.animation = "closeRegContainer 0.2s ease 1 forwards";
+				}
+				if(c == 2){
+					contacts.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				if(c == 3){
+					about.style.animation = "closeRegContainer 0.5s ease 1 forwards";
+				}
+				// setTimeout(function(){
+				// home.style.display = "none";
+				// rules.style.display = "none";
+				// }, 400);
+				setTimeout(function(){
+				// contacts.style.display = "block";
+				developers.style.animation = "openRegContainer 0.5s ease 1 forwards";
+				}, 500);
+				c = 4;
 				break;
 			}
 			default:

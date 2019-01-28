@@ -55,7 +55,7 @@ html,body{
     color: #565656;
     padding: 5px 2vw;
 }
-.links :nth-child(6){
+.links :nth-child(7){
     background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
     color: white;
     display: none;
@@ -135,8 +135,9 @@ html,body{
     text-decoration: none;
     color: white;
 }
-.rules h3, .about h3{
+.rules h3, .about h3, .developers h3{
     font-size: 7vh;
+    height: 10vh;
     text-align: center;
     font-family: Bahnschrift;
     color: #2dc9af;
@@ -161,11 +162,32 @@ html,body{
     width: 70vw;
     margin: 0 15vw;
 }
+.developers {
+    position: absolute;
+    top: 10vh;
+    opacity: 0;
+    width: 100vw;
+    margin: 0;
+}
+.developers > div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.developers h6 {
+    text-decoration: none;
+    margin: 2vh 0 1vh 0;
+    font-size: 3vh;
+    font-family: Bahnschrift;
+}
+.developers p {
+    margin: 0;
+}
 .about{
     position: absolute;
     top: 10vh;
 }
-.rules > p, .about p {
+.rules > p, .about p, .developers p {
     font-size: 3vh;
     font-family: Bahnschrift;
     color: #565656;
@@ -175,7 +197,7 @@ html,body{
     width: 80vw;
     margin: 0 10vw;
     position: absolute;
-    top: 10vh;
+    top: 8vh;
 }
 .contacts > p > a {
     text-decoration: none;
@@ -285,6 +307,17 @@ h5 {
     cursor: pointer;
     display: none;
 }
+.dev {
+    width: 20vw;
+    margin: 0;
+    text-align: center;
+}
+.dev > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid 10px #2dc9af;
+}
 @media all and (max-width: 1000px){
     .problem {
         font-size: 1.1rem;
@@ -309,6 +342,10 @@ h5 {
     }
     .contacts > p, .content h6 {
         font-size: 2.8vh;
+    }
+    .dev > img {
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -337,6 +374,11 @@ h5 {
     }
     .contacts > p, .content h6 {
         font-size: 2.3vh;
+    }
+    .dev > img {
+        width: 150px;
+        height: 150px;
+        border-width: 7px;
     }
 }
 
@@ -439,7 +481,7 @@ h5 {
         color: #fff;
         padding: 3vh;
     }
-    .links :nth-child(6){
+    .links :nth-child(7){
         display: none;
     }
     .links :nth-child(2){
@@ -458,6 +500,29 @@ h5 {
     .rules p, .about p{
         margin-top: 5vh;
         padding: 0 3vw;
+    }
+    .developers > h3 {
+        margin: 0;
+    }
+    .developers h6 {
+        font-size: 2.5vh;
+    }
+    .developers p {
+        font-size: 2vh;
+    }
+    .developers > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .dev {
+        width: 40vw;
+        margin: 10px;
+    }
+    .dev > img {
+        width: 100px;
+        height: 100px;
+        border-width: 5px;
     }
 }
 
@@ -1053,7 +1118,7 @@ h5 {
         color: #fff;
         padding: 3vh;
     }
-    .links :nth-child(6){
+    .links :nth-child(7){
         display: none;
     }
     .links :nth-child(2){
