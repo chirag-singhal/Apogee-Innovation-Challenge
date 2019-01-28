@@ -378,7 +378,7 @@ h5 {
         font-size: 6vh;
     }
     .rules > ol > li, .about p {
-        font-size: 2vh;
+        font-size: 1.8vh;
         padding: 0;
     }
     .contacts > p, .content h6 {
@@ -507,7 +507,7 @@ h5 {
         margin: 2vh;
     }
     .rules > ol {
-        margin-top: 5vh;
+        margin-top: -2vh;
     }
     .rules > ol > li, .about p{
         padding: 0 3vw;
@@ -1202,4 +1202,7 @@ h5 {
     .rules p{
         font-size: 0.5em;
     }
+}
+.links :nth-child(6){
+    display: none;
 }
