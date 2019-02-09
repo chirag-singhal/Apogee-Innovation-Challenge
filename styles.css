@@ -32,8 +32,8 @@ html,body{
     z-index: 20;
 }
 .logo{
-    width: 200px;
-    height: 58px;
+    width: 221px;
+    height: 65px;
     background: url("svg/l&t_apogee logo.svg");
     background-size: cover;
     margin: 3vh 5vh;
@@ -1217,4 +1217,7 @@ h5 {
     .rules p{
         font-size: 0.5em;
     }
+}
+.links :nth-child(6){
+    display: none;
 }
