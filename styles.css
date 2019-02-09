@@ -32,11 +32,11 @@ html,body{
     z-index: 20;
 }
 .logo{
-    width: 140px;
-    height: 41px;
+    width: 200px;
+    height: 58px;
     background: url("svg/l&t_apogee logo.svg");
     background-size: cover;
-    margin: 5vh;
+    margin: 3vh 5vh;
     z-index: 10;
 }
 .links{
@@ -59,7 +59,7 @@ html,body{
     background: linear-gradient(to bottom, #6eeed7 0%, #6CF1E4 100%);
     color: white;
     border-radius: 20px / 17px;
-    margin-right: 10vw;
+    margin-right: 8vw;
     padding: 7px 15px;
 }
 .circle{
@@ -750,6 +750,9 @@ h5 {
         max-height: 40vh;
         max-width: 30vw;;
     }
+    .links{
+        font-size: 1.3rem;
+    }
 }
 
 
@@ -766,8 +769,8 @@ h5 {
         font-size: 1.1rem;
     }
     .logo{
-        width: 130px;
-        height: 37px;
+        width: 135px;
+        height: 39px;
         margin: 4vh 5vh;
     }
     .content p{
@@ -788,8 +791,8 @@ h5 {
 
 @media all and (max-width: 1000px){
     .logo{
-        width: 122px;
-        height: 35px;
+        width: 123px;
+        height: 36px;
     }
     .links{
         font-size: 0.9rem;
@@ -979,6 +982,9 @@ h5 {
     .contacts p{
         font-size: 2.4vh;
     }
+    .logo{
+        margin-top: 2vh;
+    }
 }
 @keyframes openReg {
     from {
@@ -1158,8 +1164,8 @@ h5 {
         height: 100vh;
     }
     .logo{
-        height: 29px;
-        width: 100px;
+        height: 38px;
+        width: 130px;
         margin: 2vh 5vh;
     }
     .hamburger{
