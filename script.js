@@ -343,7 +343,8 @@ function probChange(){
 		var rt = document.createTextNode(problem.rewards[prob]);
 		r1.appendChild(rt);
 		var p1 = document.createElement("p");
-		var t3 = document.createTextNode(problem.content[prob]);
+		var t3 = document.createElement('p');
+		t3.innerHTML = problem.content[prob];
 		p1.appendChild(t3);
 		content.innerHTML = "";
 		content.appendChild(r1);
@@ -373,7 +374,7 @@ var problem =
     content: [
     "Reflexis is the leading provider of real-time store operations solutions having been selected by more than 250 global retailers to simplify store operations, optimize labor spend, and improve store execution. The Reflexis ONE real-time work platform helps retailers drive simplification for stores and improved line-of-sight for field management resulting in significant time savings, precise execution, and superior customer experience.",
     "Zulip, a GSoC company from past 3 years. Zulip deals with creating the perfect hybrid of online group chat and email threading model. A 100% open source software, Zulip works on latest technologies and thus has a high-quality code base.",
-    "A miscellany of Architecture, Nature, and Technology inspired by teamwork and intelligence of Ants, the Ant Studio works with a motive to bridge the gap between craft and machinery, hence pushing for designs that go beyond functional and aesthetic concern to concoct an affiliation between the built and natural.",
+    "A miscellany of Architecture, Nature, and Technology inspired by teamwork and intelligence of Ants, the Ant Studio works with a motive to bridge the gap between craft and machinery, hence pushing for designs that go beyond functional and aesthetic concern to concoct an affiliation between the built and natural.<br><br>AIC Ant Studio Winners<ol><li>The Green Thumb(NIT Patna)</li><ul><li>Insha Nadeeem</li><li>Aman Raj Sundaram</li><li>Atul Kumar</li></ul><li>Orange Juice(BITS Pilani)</li><ul><li>Gaurav Rathi</li><li>Abhishek Jain</li></ul><li>Friends (BITS Pilani)</li><ul><li>Prathemesh Hinge</li><li>Utkarsh Shrivastava</li><li>Jay bajaj</li></ul></ol>",
     "GE Healthcare is an American multinational conglomerate incorporated in New York and headquartered in Chicago, Illinois. As of 2017, the company is a manufacturer and distributor of diagnostic imaging agents and radiopharmaceuticals for imaging modalities that are used in medical imaging procedures. The company offers dyes that are used in magnetic-resonance-imaging procedures. GE Healthcare also manufactures medical diagnostic equipment including CT image machines.",
     "Netskope, Inc. is an American software company founded in 2012 that helps companies protect data and protect against threats in cloud applications, cloud infrastructure, and the web. Netskope is in a category of technology classified by Gartner as cloud access security brokers. Netskope is recognized as a leader in the Gartner Magic Quadrant for Cloud Access Security Brokers."
     ],

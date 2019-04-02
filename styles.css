@@ -646,7 +646,7 @@ h5 {
 .content p, .content h6 {
     color: #2e394c;
     font-size: 1.7rem;
-    padding: 0 8vw;
+    padding: 0 4vw;
     margin: 0;
     font-family: Bahnschrift;
     max-height: 50vh;
@@ -875,9 +875,15 @@ h5 {
         font-size: 5vw;
         color: #a6e6e1;
         height: 40vh;
-        padding-left: 10vw;
-        padding-right: 5vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
         overflow: scroll;
+    }
+    ol{
+        padding: 4vw;
+    }
+    ol li, ul li{
+        font-size: 4.5vw;
     }
     .heading1{
         width: 50vw;
